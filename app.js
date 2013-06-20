@@ -40,8 +40,10 @@ Ext.application({
     ],
     models:[
         'ArmyModel',
-        'CoreUnitModel',
         'HeroUnitModel',
+        'CoreUnitModel',
+        'SpecialUnitModel',
+        'RareUnitModel',
         'MagicalObjectModel',
         'UnitOptionModel'
     ],

@@ -29,6 +29,8 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 configureLordUnit: "lordUnitSelection",
                 configureHeroUnit: "heroUnitSelection",
                 configureCoreUnit: "coreUnitSelection",
+                configureSpecialUnit: "specialUnitSelection",
+                configureRareUnit: "rareUnitSelection",
                 backButtonTap: "backHome",
                 updateCost: "updateCost"
             }
@@ -83,6 +85,16 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         var unit = Ext.getCmp("coreSelection").getRecord();
         Ext.getCmp("coreUnitComposition").setData(unit.data);
     },
+    specialUnitSelection: function(){
+        console.log("specialUnitSelection");
+        var unit = Ext.getCmp("specialSelection").getRecord();
+        Ext.getCmp("specialUnitComposition").setData(unit.data);
+    },
+    rareUnitSelection: function(){
+        console.log("rareUnitSelection");
+        var unit = Ext.getCmp("rareSelection").getRecord();
+        Ext.getCmp("rareUnitComposition").setData(unit.data);
+    },
 
     updateCost: function(view){
         console.log("updateCost");
@@ -91,15 +103,14 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         var nbFig = parseInt(Ext.getCmp(view.id+"-unitQte").getValue());
         var figCost = view.getData().cost;
         var optionsCost = 0;
-        console.log("nbFig"+nbFig);
         Ext.getCmp(view.id+"-options").getItems().each(function(option){
+            if(!option.isXType("checkboxfield"))
+                return;
             if(option.isChecked()){
                 var costbyfigFactor = 1;
                 if(option.getData().costbyfig){
                     costbyfigFactor = nbFig;
                 }
-                console.log("costbyfigFactor"+costbyfigFactor);
-                console.log("cost"+option.getData().cost);
                 optionsCost += option.getData().cost*costbyfigFactor;
             }
 

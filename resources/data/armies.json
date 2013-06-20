@@ -261,6 +261,121 @@
                 }
             ],
             "heroes":[
+                {
+                    "name": "Assassin",
+                    "cost": 120,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 50,
+                    "options":[]
+                },
+                {
+                    "name": "Technomage",
+                    "cost": 15,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 50,
+                    "options":[
+                        {
+                            "name": "Sorcier de niveau 1",
+                            "cost": 50,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Sorcier de niveau 2",
+                            "cost": 85,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Arme de Technomage",
+                            "cost": 45,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Pistolet à Malepierre",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Mousquet à Malepierre",
+                            "cost": 15,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Chef",
+                    "cost": 45,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 50,
+                    "options":[
+                        {
+                            "name": "Arme Lourde",
+                            "cost": 4,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Arme de base additionnelle",
+                            "cost": 2,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Hallebarde",
+                            "cost": 2,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Bouclier",
+                            "cost": 2,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grande Bannière",
+                            "cost": 25,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Prêtre de la Peste",
+                    "cost": 100,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 50,
+                    "options":[
+                        {
+                            "name": "Sorcier niveau 2",
+                            "cost": 35,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Encensoir à peste",
+                            "cost": 16,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Fléau",
+                            "cost": 4,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Arme de base additionnelle",
+                            "cost": 2,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grand Rat Pesteux",
+                            "cost": 30,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Creuset de la Peste",
+                            "cost": 150,
+                            "costbyfig": false
+                        }
+                    ]
+                }
             ],
             "cores":[
                 {
@@ -376,11 +491,183 @@
                             "costbyfig": false
                         }
                     ]
+                },
+                {
+                    "name": "Esclaves",
+                    "cost": 2,
+                    "min": 20,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[
+                        {
+                            "name": "Lances",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Frondes",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Boucliers",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Musicien",
+                            "cost": 2,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grandes-pattes",
+                            "cost": 4,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Coureurs Nocturnes",
+                    "cost": 7,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[
+                        {
+                            "name": "Frondes",
+                            "cost": 1,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Grande-cape",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Foreuse à Malepierre",
+                            "cost": 60,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuées de Rats",
+                    "cost": 25,
+                    "min": 2,
+                    "max": 10,
+                    "corepoints": false,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[]
                 }
             ],
             "specials":[
+                {
+                    "name": "Coureurs d'Égouts",
+                    "cost": 12,
+                    "min": 5,
+                    "max": 15,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[
+                        {
+                            "name": "Frondes",
+                            "cost": 1,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Attaques Empoisonnées",
+                            "cost": 5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Coureur Mortel",
+                            "cost": 12,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Fumigènes",
+                            "cost": 10,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Lame Suintante",
+                            "cost": 30,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Foreuse à Malepierre",
+                            "cost": 60,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Jezzails à Malepierre",
+                    "cost": 20,
+                    "min": 5,
+                    "max": 0,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[
+                        {
+                            "name": "Oeil de Rat-lynx",
+                            "cost": 10,
+                            "costbyfig": false
+                        }
+                    ]
+                }
             ],
             "rares":[
+                {
+                    "name": "Abomination de Malefosse",
+                    "cost": 235,
+                    "min": 1,
+                    "max": 1,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[]
+                },
+                {
+                    "name": "Roue Infernale",
+                    "cost": 150,
+                    "min": 1,
+                    "max": 1,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[]
+                },
+                {
+                    "name": "Canon à Malefosse",
+                    "cost": 90,
+                    "min": 1,
+                    "max": 1,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[]
+                },
+                {
+                    "name": "Catapulte de la Peste",
+                    "cost": 100,
+                    "min": 1,
+                    "max": 1,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[]
+                }
             ],
             "magicobjects":[
                 {

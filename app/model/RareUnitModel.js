@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.model.CoreUnitModel', {
+Ext.define('WarhammerBuilder.model.RareUnitModel', {
     extend: 'Ext.data.Model',
 
     config: {
