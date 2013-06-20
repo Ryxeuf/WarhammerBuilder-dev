@@ -6,29 +6,23 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.CoresComposition', {
         styleHtmlContent: true,
         items:[
             {
-                xtype: "container",
-                layout: "hbox",
-                items:[
+                xtype: "selectfield",
+                id: "coreSelection",
+                displayField: "name",
+                valueField: "name",
+                flex: 3,
+                usePicker: "auto",
+                listeners:[
                     {
-                        xtype: "selectfield",
-                        id: "coreSelection",
-                        displayField: "name",
-                        valueField: "name",
-                        flex: 3,
-                        usePicker: "auto",
-                        listeners:[
-                            {
-                                event: 'change',
-                                fn: function() { this.parent.parent.fireEvent("configureCoreUnit"); }
+                        event: 'change',
+                        fn: function() { this.parent.parent.fireEvent("configureCoreUnit"); }
 
-                            }
-                        ]
                     }
                 ]
             },
             {
                 xtype: "unitcomposition",
-                id: "unitComposition"
+                id: "coreUnitComposition"
             },
             {
                 xtype: "list",

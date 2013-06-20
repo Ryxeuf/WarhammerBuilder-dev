@@ -14,6 +14,31 @@ Ext.define('WarhammerBuilder.model.ArmyModel', {
                 model: 'WarhammerBuilder.model.CoreUnitModel',
                 associationKey: 'cores',
                 name: 'cores'
+            },
+            {
+                model: 'WarhammerBuilder.model.HeroUnitModel',
+                associationKey: 'heroes',
+                name: 'heroes'
+            },
+            {
+                model: 'WarhammerBuilder.model.SpecialUnitModel',
+                associationKey: 'specials',
+                name: 'specials'
+            },
+            {
+                model: 'WarhammerBuilder.model.RareUnitModel',
+                associationKey: 'rares',
+                name: 'rares'
+            },
+            {
+                model: 'WarhammerBuilder.model.HeroUnitModel',
+                associationKey: 'lords',
+                name: 'lords'
+            },
+            {
+                model: 'WarhammerBuilder.model.MagicalObjectModel',
+                associationKey: 'magicobjects',
+                name: 'magicobjects'
             }
         ]
     }

@@ -58,6 +58,10 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.UnitComposition', {
                             items: options
                         }
                     ]
+                },
+                {
+                    xtype: "button",
+                    html: "Engager"
                 }
             ]
         };

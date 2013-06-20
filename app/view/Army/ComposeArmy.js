@@ -14,7 +14,13 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy', {
                         id: "backButton",
                         iconCls: "back",
                         iconMask: true,
-                        align: 'left'
+                        align: 'left',
+                        listeners:[
+                            {
+                                event: "tap",
+                                fn: function(){ this.parent.parent.parent.fireEvent("backButtonTap"); }
+                            }
+                        ]
                     },
                     {
                         xtype: "button",

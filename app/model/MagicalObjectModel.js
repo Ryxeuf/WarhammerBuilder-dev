@@ -1,11 +1,11 @@
-Ext.define('WarhammerBuilder.model.UnitOptionModel', {
+Ext.define('WarhammerBuilder.model.MagicalObjectModel', {
     extend: 'Ext.data.Model',
 
     config: {
         fields: [
             { name: 'name', type: 'string' },
             { name: 'cost', type: 'float' },
-            { name: 'costbyfig', type: 'boolean', defaultValue: false }
+            { name: 'type', type: 'string' }
         ]
     }
 });

@@ -9,8 +9,7 @@ Ext.define('WarhammerBuilder.model.CoreUnitModel', {
             { name: 'cost', type: 'float' },
             { name: 'finalcost', type: 'float' },
             { name: 'magicalobjects', type: 'boolean', defaultValue: false },
-            { name: 'maxmagicalobjectscost', type: 'int' },
-            { name: 'corepoints', type: 'boolean', defaultValue: true }
+            { name: 'maxmagicalobjectscost', type: 'int' }
         ],
 
         hasMany: [

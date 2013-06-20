@@ -16,16 +16,27 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         refs: {
             mainView: 'main',
             armyList: "armylist",
-            coresComposition: "corescomposition"
+            composeArmy: "composearmy"
         },
 
         control: {
-            armyList: { itemtap: "displayArmyList" },
-            coresComposition: {
-                initialize: "onCoresCompositionInit",
-                configureCoreUnit: "coreUnitSelection"
+            armyList: { 
+                itemtap: "displayArmyList" 
+            },
+            composeArmy: {
+                initialize: "onCompositionInit",
+                configureLordUnit: "lordUnitSelection",
+                configureHeroUnit: "heroUnitSelection",
+                configureCoreUnit: "coreUnitSelection",
+                backButtonTap: "backHome" 
             }
         }
+    },
+
+    backHome: function(){
+        console.log("backHome");
+        Ext.Viewport.remove(this.getComposeArmy(), true);
+        Ext.Viewport.setActiveItem(this.getMainView());
     },
 
     army: null,
@@ -46,15 +57,28 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         Ext.Viewport.setActiveItem(commposeView);
         commposeView.getAt(0).setTitle(record.get('name')+" ("+points+"pts)");
     },
-    onCoresCompositionInit: function(){
-        console.log("onCoresCompositionInit");
+    onCompositionInit: function(){
+        console.log("onCompositionInit");
         console.log(this.army);
+        Ext.getCmp("lordSelection").setStore(this.army.lordsStore);
+        Ext.getCmp("heroSelection").setStore(this.army.heroesStore);
         Ext.getCmp("coreSelection").setStore(this.army.coresStore);
+        Ext.getCmp("specialSelection").setStore(this.army.specialsStore);
+        Ext.getCmp("rareSelection").setStore(this.army.raresStore);
+    },
+    lordUnitSelection: function(){
+        console.log("lordUnitSelection");
+        var unit = Ext.getCmp("lordSelection").getRecord();
+        Ext.getCmp("lordUnitComposition").setData(unit.data);
+    },
+    heroUnitSelection: function(){
+        console.log("heroUnitSelection");
+        var unit = Ext.getCmp("heroSelection").getRecord();
+        Ext.getCmp("heroUnitComposition").setData(unit.data);
     },
     coreUnitSelection: function(){
         console.log("coreUnitSelection");
         var unit = Ext.getCmp("coreSelection").getRecord();
-        Ext.getCmp("unitComposition").setData(unit.data);
-
+        Ext.getCmp("coreUnitComposition").setData(unit.data);
     }
 });

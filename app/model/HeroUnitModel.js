@@ -1,16 +1,14 @@
-Ext.define('WarhammerBuilder.model.CoreUnitModel', {
+Ext.define('WarhammerBuilder.model.HeroUnitModel', {
     extend: 'Ext.data.Model',
 
     config: {
         fields: [
             { name: 'name', type: 'string' },
-            { name: 'min', type: 'int' },
-            { name: 'max', type: 'int' },
+            { name: 'min', type: 'int', defaultValue: 1 },
             { name: 'cost', type: 'float' },
             { name: 'finalcost', type: 'float' },
-            { name: 'magicalobjects', type: 'boolean', defaultValue: false },
-            { name: 'maxmagicalobjectscost', type: 'int' },
-            { name: 'corepoints', type: 'boolean', defaultValue: true }
+            { name: 'magicalobjects', type: 'boolean', defaultValue: true },
+            { name: 'maxmagicalobjectscost', type: 'int' }
         ],
 
         hasMany: [

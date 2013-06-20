@@ -4,6 +4,32 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.HeroesComposition', {
     config: {
         title: "Héros",
         items:[
+            {
+                xtype: "selectfield",
+                id: "heroSelection",
+                displayField: "name",
+                valueField: "name",
+                autoCapitalize: "on",
+                usePicker: "auto",
+                listeners:[
+                    {
+                        event: 'change',
+                        fn: function() { this.parent.parent.fireEvent("configureHeroUnit"); }
+
+                    }
+                ]
+            },
+            {
+                xtype: "unitcomposition",
+                id: "heroUnitComposition"
+            },
+            {
+                xtype: "list",
+                id: "heroesChosen",
+                itemTpl: new Ext.XTemplate(
+                    "{name} :: "
+                )
+            }
         ]
     }
 });

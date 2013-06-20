@@ -5,10 +5,19 @@
             "name": "Hommes Lézards",
             "image": null,
             "description": "",
-            /*"lords":[
+            "lords":[
             ],
-            "hereos":[
-            ],*/
+            "heroes":[
+                {
+                    "name": "Kuraq Saurus",
+                    "cost": 85,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 50,
+                    "options":[
+                    ] 
+                }
+            ],
             "cores":[
                 {
                     "name": "Saurus",
@@ -17,6 +26,8 @@
                     "max": 0,
                     "corepoints": true,
                     "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
                     "options":[
                         {
                             "name": "Lances",
@@ -47,6 +58,8 @@
                     "max": 0,
                     "corepoints": true,
                     "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
                     "options":[
                         {
                             "name": "Tupak",
@@ -62,23 +75,42 @@
                     "max": 3,
                     "corepoints": false,
                     "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
                     "options":[]
                 }
-            ]/*,
+            ],
             "specials":[
             ],
             "rares":[
-            ]*/
+            ],
+            "magicobjects":[
+                {
+                    "name": "Epée de Frappe",
+                    "cost": 25,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Lame de Morsure",
+                    "cost": 10,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Talisman de protection",
+                    "cost": 15,
+                    "type": "Talisman"
+                }
+            ]
         },
         {
             "id": 2,
             "name": "Elfes Sylvains",
             "image": null,
             "description": "",
-            /*"lords":[
+            "lords":[
             ],
-            "hereos":[
-            ],*/
+            "heroes":[
+            ],
             "cores":[
                 {
                     "name": "Gardes Sylvestres",
@@ -87,6 +119,8 @@
                     "max": 0,
                     "corepoints": true,
                     "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
                     "options":[
                         {
                             "name": "Etendard",
@@ -112,6 +146,8 @@
                     "max": 0,
                     "corepoints": true,
                     "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
                     "options":[
                         {
                             "name": "Championne",
@@ -120,11 +156,191 @@
                         }
                     ]
                 }
-            ]/*,
+            ],
             "specials":[
             ],
             "rares":[
-            ]*/
+            ],
+            "magicobjects":[
+                {
+                    "name": "Epée de Frappe",
+                    "cost": 25,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Lame de Morsure",
+                    "cost": 10,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Talisman de protection",
+                    "cost": 15,
+                    "type": "Talisman"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Skavens",
+            "image": null,
+            "description": "",
+            "lords":[
+                {
+                    "name": "Verminarque",
+                    "cost": 500,
+                    "finalcost" : 500,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[] 
+                },
+                {
+                    "name": "Queek Coupe-têtes",
+                    "cost": 215,
+                    "finalcost" : 215,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[] 
+                }
+            ],
+            "heroes":[
+            ],
+            "cores":[
+                {
+                    "name": "Guerrier des Clans",
+                    "cost": 4,
+                    "min": 20,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[
+                        {
+                            "name": "Boucliers",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Lances",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Etendard",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Musicien",
+                            "cost": 4,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grandes-griffes",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Mortier à Globes Toxiques",
+                            "cost": 65,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Lance-feu",
+                            "cost": 70,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Mitrailleuse ratling",
+                            "cost": 55,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Ratasphère",
+                            "cost": 55,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Vermines de Choc",
+                    "cost": 7,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 15,
+                    "options":[
+                        {
+                            "name": "Boucliers",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Lances",
+                            "cost": 0.5,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Etendard",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Musicien",
+                            "cost": 4,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grandes-dents",
+                            "cost": 8,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Mortier à Globes Toxiques",
+                            "cost": 65,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Lance-feu",
+                            "cost": 70,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Mitrailleuse ratling",
+                            "cost": 55,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Ratasphère",
+                            "cost": 55,
+                            "costbyfig": false
+                        }
+                    ]
+                }
+            ],
+            "specials":[
+            ],
+            "rares":[
+            ],
+            "magicobjects":[
+                {
+                    "name": "Epée de Frappe",
+                    "cost": 25,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Lame de Morsure",
+                    "cost": 10,
+                    "type": "Arme Magique"
+                },
+                {
+                    "name": "Talisman de protection",
+                    "cost": 15,
+                    "type": "Talisman"
+                }
+            ]
         }
     ]
 }

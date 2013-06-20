@@ -41,6 +41,8 @@ Ext.application({
     models:[
         'ArmyModel',
         'CoreUnitModel',
+        'HeroUnitModel',
+        'MagicalObjectModel',
         'UnitOptionModel'
     ],
 
