@@ -16,7 +16,8 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         refs: {
             mainView: 'main',
             armyList: "armylist",
-            composeArmy: "composearmy"
+            composeArmy: "composearmy",
+            lordCost: "#lordUnitComposition span[class=unitCost]"
         },
 
         control: {
@@ -28,7 +29,8 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 configureLordUnit: "lordUnitSelection",
                 configureHeroUnit: "heroUnitSelection",
                 configureCoreUnit: "coreUnitSelection",
-                backButtonTap: "backHome" 
+                backButtonTap: "backHome",
+                updateCost: "updateCost"
             }
         }
     },
@@ -80,5 +82,23 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         console.log("coreUnitSelection");
         var unit = Ext.getCmp("coreSelection").getRecord();
         Ext.getCmp("coreUnitComposition").setData(unit.data);
+    },
+
+    updateCost: function(view, option, factor){
+        console.log("updateCost");
+        console.log(view);
+        console.log(option);
+
+        var nbFig = Ext.getCmp(view.id+"-unitQte").getValue();
+        var costbyfigFactor = 1;
+        if(option.costbyfig){
+            costbyfigFactor = nbFig;
+        }
+        console.log(parseFloat(option.cost));
+        console.log(factor);
+        console.log(costbyfigFactor);
+        console.log(nbFig);
+        view.unitCost += parseFloat(option.cost)*factor*costbyfigFactor;
+        Ext.getCmp(view.id+"-unitCostField").setHtml("<span style='font-size: 15px; font-weight: bold;'>Coût total</span>: "+view.unitCost+"pts");
     }
 });

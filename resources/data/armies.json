@@ -186,6 +186,64 @@
             "description": "",
             "lords":[
                 {
+                    "name": "Seigneur de guerre",
+                    "cost": 90,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 100,
+                    "options":[
+                        {
+                            "name": "Arme Lourde",
+                            "cost": 6,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Arme de base additionnelle",
+                            "cost": 3,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Hallebarde",
+                            "cost": 3,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Bouclier",
+                            "cost": 3,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Rat-ogre Broyeur",
+                            "cost": 65,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Litière de guerre",
+                            "cost": 35,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Grand Rat Pesteux",
+                            "cost": 30,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Prophète Gris",
+                    "cost": 240,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 100,
+                    "options":[
+                        {
+                            "name": "Cloche Hurlante",
+                            "cost": 200,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
                     "name": "Verminarque",
                     "cost": 500,
                     "finalcost" : 500,
