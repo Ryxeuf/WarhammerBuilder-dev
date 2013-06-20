@@ -1,0 +1,130 @@
+{
+    "armies": [
+        {
+            "id": 1,
+            "name": "Hommes Lézards",
+            "image": null,
+            "description": "",
+            /*"lords":[
+            ],
+            "hereos":[
+            ],*/
+            "cores":[
+                {
+                    "name": "Saurus",
+                    "cost": 11,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "options":[
+                        {
+                            "name": "Lances",
+                            "cost": 1,
+                            "costbyfig": true
+                        },
+                        {
+                            "name": "Etendard",
+                            "cost": 12,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Musicien",
+                            "cost": 6,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Champion",
+                            "cost": 12,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Tirailleurs Skinks",
+                    "cost": 6,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "options":[
+                        {
+                            "name": "Tupak",
+                            "cost": 6,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuées",
+                    "cost": 45,
+                    "min": 1,
+                    "max": 3,
+                    "corepoints": false,
+                    "finalcost" : 0,
+                    "options":[]
+                }
+            ]/*,
+            "specials":[
+            ],
+            "rares":[
+            ]*/
+        },
+        {
+            "id": 2,
+            "name": "Elfes Sylvains",
+            "image": null,
+            "description": "",
+            /*"lords":[
+            ],
+            "hereos":[
+            ],*/
+            "cores":[
+                {
+                    "name": "Gardes Sylvestres",
+                    "cost": 10,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "options":[
+                        {
+                            "name": "Etendard",
+                            "cost": 12,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Musicien",
+                            "cost": 6,
+                            "costbyfig": false
+                        },
+                        {
+                            "name": "Champion",
+                            "cost": 12,
+                            "costbyfig": false
+                        }
+                    ]
+                },
+                {
+                    "name": "Dryades",
+                    "cost": 12,
+                    "min": 10,
+                    "max": 0,
+                    "corepoints": true,
+                    "finalcost" : 0,
+                    "options":[
+                        {
+                            "name": "Championne",
+                            "cost": 6,
+                            "costbyfig": false
+                        }
+                    ]
+                }
+            ]/*,
+            "specials":[
+            ],
+            "rares":[
+            ]*/
+        }
+    ]
+}
