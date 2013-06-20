@@ -84,21 +84,27 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         Ext.getCmp("coreUnitComposition").setData(unit.data);
     },
 
-    updateCost: function(view, option, factor){
+    updateCost: function(view){
         console.log("updateCost");
         console.log(view);
-        console.log(option);
 
-        var nbFig = Ext.getCmp(view.id+"-unitQte").getValue();
-        var costbyfigFactor = 1;
-        if(option.costbyfig){
-            costbyfigFactor = nbFig;
-        }
-        console.log(parseFloat(option.cost));
-        console.log(factor);
-        console.log(costbyfigFactor);
-        console.log(nbFig);
-        view.unitCost += parseFloat(option.cost)*factor*costbyfigFactor;
+        var nbFig = parseInt(Ext.getCmp(view.id+"-unitQte").getValue());
+        var figCost = view.getData().cost;
+        var optionsCost = 0;
+        console.log("nbFig"+nbFig);
+        Ext.getCmp(view.id+"-options").getItems().each(function(option){
+            if(option.isChecked()){
+                var costbyfigFactor = 1;
+                if(option.getData().costbyfig){
+                    costbyfigFactor = nbFig;
+                }
+                console.log("costbyfigFactor"+costbyfigFactor);
+                console.log("cost"+option.getData().cost);
+                optionsCost += option.getData().cost*costbyfigFactor;
+            }
+
+        });
+        view.unitCost = nbFig*figCost + optionsCost;
         Ext.getCmp(view.id+"-unitCostField").setHtml("<span style='font-size: 15px; font-weight: bold;'>Coût total</span>: "+view.unitCost+"pts");
     }
 });

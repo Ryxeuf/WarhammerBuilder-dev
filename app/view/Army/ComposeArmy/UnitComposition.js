@@ -29,14 +29,15 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.UnitComposition', {
                 xtype: 'checkboxfield',
                 name : option.name,
                 label: option.name,
+                data: option,
                 listeners:[
                     {
                         event: 'check',
-                        fn: function(){ me.parent.parent.fireEvent("updateCost", me, option, 1); }
+                        fn: function(){ me.parent.parent.fireEvent("updateCost", me); }
                     },
                     {
                         event: 'uncheck',
-                        fn: function(){ me.parent.parent.fireEvent("updateCost", me, option, -1); }
+                        fn: function(){ me.parent.parent.fireEvent("updateCost", me); }
                     }
                 ]
             });
@@ -57,7 +58,13 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.UnitComposition', {
                     stepValue: 1,
                     minValue: datas.min,
                     maxValue: (datas.max == 0)? 100000:datas.max,
-                    value: datas.min
+                    value: datas.min,
+                    listeners:[
+                        {
+                            event: 'change',
+                            fn: function(){ me.parent.parent.fireEvent("updateCost", me); }
+                        }
+                    ]
                 },
                 {
                     xtype: 'panel',
@@ -69,6 +76,7 @@ Ext.define('WarhammerBuilder.view.Army.ComposeArmy.UnitComposition', {
                         },
                         {
                             xtype: "panel",
+                            id: me.id+"-options",
                             layout: "vbox",
                             flex: 5,
                             items: options
