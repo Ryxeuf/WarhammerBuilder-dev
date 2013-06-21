@@ -25,10 +25,7 @@ Ext.define('WarhammerBuilder.view.tablet.Army.ComposeArmy.LordsComposition', {
             },
             {
                 xtype: "list",
-                id: "lordesChosen",
-                itemTpl: new Ext.XTemplate(
-                    "{name} :: "
-                )
+                id: "lordUnitComposition-chosen"
             }
         ]
     }

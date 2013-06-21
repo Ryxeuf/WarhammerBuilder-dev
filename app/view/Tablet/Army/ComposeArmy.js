@@ -46,6 +46,12 @@ Ext.define('WarhammerBuilder.view.tablet.Army.ComposeArmy', {
             },
             {
                 xtype: "rarescomposition"
+            },
+            {
+                docked: 'bottom',
+                xtype: 'titlebar',
+                html: "0 pts",
+                align: 'right'
             }
         ]
     },

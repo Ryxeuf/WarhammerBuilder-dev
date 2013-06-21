@@ -109,7 +109,9 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         view.unitCost = nbFig*figCost + optionsCost;
         Ext.getCmp(view.id+"-unitCostField").setHtml("<span style='font-size: 15px; font-weight: bold;'>Coût total</span>: "+view.unitCost+"pts");
     },
-    engageUnit: function(){
+    engageUnit: function(view){
         console.log("engageUnit");
+        console.log(view);
+        console.log(view.up());
     }
 });
