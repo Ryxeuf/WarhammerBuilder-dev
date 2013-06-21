@@ -1,16 +1,5 @@
 Ext.define('WarhammerBuilder.controller.ApplicationController', {
     extend: 'Ext.app.Controller',
-    requires:[
-        "WarhammerBuilder.view.Main",
-        "WarhammerBuilder.view.Army.ArmyList",
-        "WarhammerBuilder.view.Army.ComposeArmy",
-        "WarhammerBuilder.view.Army.ComposeArmy.LordsComposition",
-        "WarhammerBuilder.view.Army.ComposeArmy.HeroesComposition",
-        "WarhammerBuilder.view.Army.ComposeArmy.CoresComposition",
-        "WarhammerBuilder.view.Army.ComposeArmy.SpecialsComposition",
-        "WarhammerBuilder.view.Army.ComposeArmy.RaresComposition",
-        "WarhammerBuilder.view.Army.ComposeArmy.UnitComposition"
-    ],
 
     config: {
         refs: {
