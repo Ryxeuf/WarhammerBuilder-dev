@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Phone.Main', {
+Ext.define('WarhammerBuilder.view.phone.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
     requires: [
@@ -68,7 +68,7 @@ Ext.define('WarhammerBuilder.view.Phone.Main', {
                     title: 'A propos'
                 },
 
-                html: "Les droits sont réservés."
+                html: "Les droits sont réservés sur Tablette."
             }
         ]
     }

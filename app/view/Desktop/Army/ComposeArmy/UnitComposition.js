@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy.UnitComposition', {
+Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.UnitComposition', {
     extend: 'Ext.Panel',
     alias: 'widget.unitcomposition',
     requires:[
@@ -29,6 +29,7 @@ Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy.UnitComposition', {
                 xtype: 'checkboxfield',
                 name : option.name,
                 label: option.name,
+                labelWidth: "90%",
                 data: option,
                 listeners:[
                     {
@@ -99,7 +100,13 @@ Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy.UnitComposition', {
                         {
                             xtype: "button",
                             html: "Engager",
-                            flex: 1
+                            flex: 1,
+                            listeners:[
+                                {
+                                    event: 'tap',
+                                    fn: function(){ me.parent.parent.fireEvent("engageUnit", me); }
+                                }
+                            ]
                         }
                     ]
                 }

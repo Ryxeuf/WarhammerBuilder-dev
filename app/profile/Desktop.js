@@ -1,20 +1,18 @@
 Ext.define('WarhammerBuilder.profile.Desktop',{
     extend: 'Ext.app.Profile',
-    requires:[
-        "WarhammerBuilder.view.Desktop.Main",
-        "WarhammerBuilder.view.Desktop.Army.ArmyList",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.LordsComposition",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.HeroesComposition",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.CoresComposition",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.SpecialsComposition",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.RaresComposition",
-        "WarhammerBuilder.view.Desktop.Army.ComposeArmy.UnitComposition"
-    ],
     config:{
-        // views:[
-        //     'Main'
-        // ]
+        name: 'Desktop',
+        views:[
+            'Main',
+            'Army.ArmyList',
+            'Army.ComposeArmy',
+            'Army.ComposeArmy.LordsComposition',
+            'Army.ComposeArmy.HeroesComposition',
+            'Army.ComposeArmy.CoresComposition',
+            'Army.ComposeArmy.SpecialsComposition',
+            'Army.ComposeArmy.RaresComposition',
+            'Army.ComposeArmy.UnitComposition',
+        ]
     },
     isActive: function(){
         return Ext.os.is.Desktop;
@@ -24,6 +22,6 @@ Ext.define('WarhammerBuilder.profile.Desktop',{
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('WarhammerBuilder.view.Desktop.Main'));
+        Ext.Viewport.add(Ext.create('widget.main'));
     }
 });

@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Army.ComposeArmy.UnitComposition', {
+Ext.define('WarhammerBuilder.view.tablet.Army.ComposeArmy.UnitComposition', {
     extend: 'Ext.Panel',
     alias: 'widget.unitcomposition',
     requires:[

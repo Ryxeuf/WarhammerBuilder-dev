@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy.RaresComposition', {
+Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.RaresComposition', {
     extend: 'Ext.Panel',
     alias: 'widget.rarescomposition',
     config: {

@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Phone.Army.ComposeArmy.SpecialsComposition', {
+Ext.define('WarhammerBuilder.view.phone.Army.ComposeArmy.SpecialsComposition', {
     extend: 'Ext.Panel',
     alias: 'widget.specialscomposition',
     config: {

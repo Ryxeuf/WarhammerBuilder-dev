@@ -1,6 +1,6 @@
-Ext.define('WarhammerBuilder.view.Desktop.Main', {
+Ext.define('WarhammerBuilder.view.desktop.Main', {
     extend: 'Ext.tab.Panel',
-    xtype: 'main',
+    alias: 'widget.main',
     requires: [
         'Ext.TitleBar',
         'Ext.field.Select'

@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Phone.Army.ComposeArmy.UnitComposition', {
+Ext.define('WarhammerBuilder.view.phone.Army.ComposeArmy.UnitComposition', {
     extend: 'Ext.Panel',
     alias: 'widget.unitcomposition',
     requires:[
@@ -29,6 +29,7 @@ Ext.define('WarhammerBuilder.view.Phone.Army.ComposeArmy.UnitComposition', {
                 xtype: 'checkboxfield',
                 name : option.name,
                 label: option.name,
+                labelWidth: "80%",
                 data: option,
                 listeners:[
                     {

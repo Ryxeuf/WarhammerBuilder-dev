@@ -31,13 +31,6 @@ Ext.application({
         'ApplicationController'
     ],
 
-    profiles:[
-        'Desktop',
-        'Tablet',
-        'Phone',
-
-    ],
-
     stores:[
         'ArmyStore'
     ],
@@ -49,6 +42,12 @@ Ext.application({
         'RareUnitModel',
         'MagicalObjectModel',
         'UnitOptionModel'
+    ],
+
+    profiles:[
+        'Phone',
+        'Tablet',
+        'Desktop',
     ],
 
     icon: {

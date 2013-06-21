@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Desktop.Army.ArmyList', {
+Ext.define('WarhammerBuilder.view.desktop.Army.ArmyList', {
     extend: 'Ext.List',
     alias: 'widget.armylist',
     config: {

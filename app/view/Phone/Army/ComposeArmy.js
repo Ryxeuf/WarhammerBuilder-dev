@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Phone.Army.ComposeArmy', {
+Ext.define('WarhammerBuilder.view.phone.Army.ComposeArmy', {
     extend: 'Ext.tab.Panel',
     alias: 'widget.composearmy',
     config: {
@@ -49,6 +49,7 @@ Ext.define('WarhammerBuilder.view.Phone.Army.ComposeArmy', {
         ]
     },
     initialize: function(){
+        this.callParent(arguments);
         console.log("Phone ComposeArmy");
     }
 });

@@ -1,20 +1,18 @@
 Ext.define('WarhammerBuilder.profile.Phone',{
     extend: 'Ext.app.Profile',
-    requires:[
-        "WarhammerBuilder.view.Phone.Main",
-        "WarhammerBuilder.view.Phone.Army.ArmyList",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.LordsComposition",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.HeroesComposition",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.CoresComposition",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.SpecialsComposition",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.RaresComposition",
-        "WarhammerBuilder.view.Phone.Army.ComposeArmy.UnitComposition"
-    ],
     config:{
-        // views:[
-        //     'Main'
-        // ]
+        name: 'Phone',
+        views:[
+            'Main',
+            'Army.ArmyList',
+            'Army.ComposeArmy',
+            'Army.ComposeArmy.LordsComposition',
+            'Army.ComposeArmy.HeroesComposition',
+            'Army.ComposeArmy.CoresComposition',
+            'Army.ComposeArmy.SpecialsComposition',
+            'Army.ComposeArmy.RaresComposition',
+            'Army.ComposeArmy.UnitComposition',
+        ]
     },
     isActive: function(){
         return Ext.os.is.Phone;
@@ -24,6 +22,6 @@ Ext.define('WarhammerBuilder.profile.Phone',{
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('WarhammerBuilder.view.Phone.Main'));
+        Ext.Viewport.add(Ext.create('WarhammerBuilder.view.phone.Main'));
     }
 });

@@ -1,4 +1,4 @@
-Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy', {
+Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy', {
     extend: 'Ext.tab.Panel',
     alias: 'widget.composearmy',
     config: {
@@ -50,6 +50,7 @@ Ext.define('WarhammerBuilder.view.Desktop.Army.ComposeArmy', {
         ]
     },
     initialize: function(){
+        this.callParent(arguments);
         console.log("Desktop ComposeArmy");
     }
 });
