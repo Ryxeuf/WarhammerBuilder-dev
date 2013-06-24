@@ -1,0 +1,35 @@
+{
+    "armies": [
+        {
+            "id": 1,            // Id de l'armée
+            "name": "Army",     // Nom de l'armée
+            "image": null,      // Une image de présentation
+            "description": "",  // Description de l'armée
+            "lords":[               // Seigneurs
+            ],
+            "heroes":[              // Héros
+            ],
+            "cores":[               // Unités de base
+                {
+                    "name": "Unit",         // Nom de l'unité
+                    "cost": 11,             // Coût d'une figurine
+                    "min": 10,              // Nombre minimum de figurine e l'unité
+                    "max": 0,               // Nombre maximum de figurine dans l'unité (0 indique qu'il n'y a pas de maximum)
+                    "corepoints": true,     // Indique si le coût de l'unité compte dans les points de base de l'armée
+                    "finalcost": 0,         // Cout final de l'unité, calculé par l'application
+                    "options":[             // Tableau des options disponibles pour l'unité
+                        {
+                            "name": "Option",       // Nom de l'option
+                            "cost": 10,              // Coût de l'option
+                            "costbyfig": true       // Indique si le coût est par figurine de l'unité ou pour l'unité
+                        }
+                    ]
+                }
+            ],
+            "specials":[            // Unités spéciales
+            ],
+            "rares":[               // Unités rares
+            ]
+        }
+    ]
+}

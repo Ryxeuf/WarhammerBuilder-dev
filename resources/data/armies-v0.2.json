@@ -108,7 +108,7 @@
             "image": null,
             "description": "",
             "lords":[
-                {
+			{
                     "name": "Seigneur sylvain",
                     "cost": 145,
                     "finalcost" : 0,
@@ -131,7 +131,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Armure lÃ©gÃ¨re",
+                            "name": "Armure légère",
                             "cost": 3,
                             "costbyfig": false
                         },
@@ -151,13 +151,13 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Dragon des forÃªts",
+                            "name": "Dragon des forêts",
                             "cost": 320,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Tisseur de charmes",
                     "cost": 215,
                     "finalcost" : 0,
@@ -170,7 +170,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Clan tisserÃªve",
+                            "name": "Clan tisserêve",
                             "cost": 20,
                             "costbyfig": false
                         },
@@ -188,21 +188,22 @@
                             "name": "Grand aigle",
                             "cost": 50,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
-                    "name": "Homme-arbre vÃ©nÃ©rable",
+			{
+                    "name": "Homme-arbre vénérable",
                     "cost": 325,
                     "finalcost" : 0,
                     "magicalobjects" : true,
                     "maxmagicalobjectscost" : 100,
                     "options":[
                     ]
-                }
+                },
+
             ],
             "heroes":[
-                {
+			{
                     "name": "Noble",
                     "cost": 75,
                     "finalcost" : 0,
@@ -225,7 +226,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Armure lÃ©gÃ¨re",
+                            "name": "Armure légère",
                             "cost": 2,
                             "costbyfig": false
                         },
@@ -245,13 +246,13 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Grande banniÃ¨re",
+                            "name": "Grande bannière",
                             "cost": 15,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Enchanteur",
                     "cost": 90,
                     "finalcost" : 0,
@@ -264,7 +265,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Clan tisserÃªve",
+                            "name": "Clan tisserêve",
                             "cost": 20,
                             "costbyfig": false
                         },
@@ -277,10 +278,10 @@
                             "name": "Coursier elfique",
                             "cost": 12,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Hamadryade",
                     "cost": 65,
                     "finalcost" : 0,
@@ -291,9 +292,9 @@
                             "name": "Niveau 1",
                             "cost": 50,
                             "costbyfig": false
-                        }
+                        },
                     ]
-                }
+                },
             ],
             "cores":[
                 {
@@ -323,60 +324,60 @@
                         }
                     ]
                 },
-                {
-                    "name": "Eclaireurs Gardes Sylvains",
-                    "cost": 17,
-                    "min": 5,
-                    "max": 10,
-                    "corepoints": true,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 12,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 6,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 6,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Chevaliers Sylvains",
-                    "cost": 24,
-                    "min": 5,
-                    "max": 10,
-                    "corepoints": true,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 18,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 9,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 9,
-                            "costbyfig": false
-                        }
-                    ]
-                },
+			{
+				"name": "Eclaireurs Gardes Sylvains",
+				"cost": 17,
+				"min": 5,
+				"max": 10,
+				"corepoints": true,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 12,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 6,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 6,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Chevaliers Sylvains",
+				"cost": 24,
+				"min": 5,
+				"max": 10,
+				"corepoints": true,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 18,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 9,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 9,
+						"costbyfig": false
+					}
+				]
+			},
                 {
                     "name": "Dryades",
                     "cost": 12,
@@ -396,151 +397,150 @@
                 }
             ],
             "specials":[
-                {
-                    "name": "Garde Ã©ternelle",
-                    "cost": 12,
-                    "min": 10,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 12,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 6,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 12,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Danseurs de guerre",
-                    "cost": 18,
-                    "min": 5,
-                    "max": 15,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Musicien",
-                            "cost": 7,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 14,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Guerriers faucons",
-                    "cost": 40,
-                    "min": 3,
-                    "max": 12,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Champion",
-                            "cost": 20,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Cavaliers sauvages de Kurnous",
-                    "cost": 26,
-                    "min": 5,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 18,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 0,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 18,
-                            "costbyfig": false
-                        }
-                    ]
-                },            
-                {
-                    "name": "LÃ©mures",
-                    "cost": 65,
-                    "min": 3,
-                    "max": 12,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Champion",
-                            "cost": 20,
-                            "costbyfig": false
-                        }
-                    ]
-                }
+			{
+				"name": "Garde éternelle",
+				"cost": 12,
+				"min": 10,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 12,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 6,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 12,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Danseurs de guerre",
+				"cost": 18,
+				"min": 5,
+				"max": 15,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Musicien",
+						"cost": 7,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 14,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Guerriers faucons",
+				"cost": 40,
+				"min": 3,
+				"max": 12,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Champion",
+						"cost": 20,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Cavaliers sauvages de Kurnous",
+				"cost": 26,
+				"min": 5,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 18,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 0,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 18,
+						"costbyfig": false
+					}
+				]
+			},			{
+				"name": "Lémures",
+				"cost": 65,
+				"min": 3,
+				"max": 12,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Champion",
+						"cost": 20,
+						"costbyfig": false
+					}
+				]
+			},
             ],
             "rares":[
-                {
-                    "name": "Forestiers",
-                    "cost": 24,
-                    "min": 5,
-                    "max": 10,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Champion",
-                            "cost": 8,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Homme-arbre",
-                    "cost": 285,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                },
-                {
-                    "name": "Grand aigle",
-                    "cost": 50,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                }
+			{
+				"name": "Forestiers",
+				"cost": 24,
+				"min": 5,
+				"max": 10,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Champion",
+						"cost": 8,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Homme-arbre",
+				"cost": 285,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
+			{
+				"name": "Grand aigle",
+				"cost": 50,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
             ],
             "magicobjects":[
                 {
@@ -559,22 +559,22 @@
                     "type": "Farfadet"
                 },
                 {
-                    "name": "NuÃ©e de piquants",
+                    "name": "Nuée de piquants",
                     "cost": 25,
                     "type": "Farfadet"
                 },
                 {
-                    "name": "PlÃ©iade de tisseurs",
+                    "name": "Pléiade de tisseurs",
                     "cost": 25,
                     "type": "Farfadet"
                 },
                 {
-                    "name": "CÃ©nacle de lumineux",
+                    "name": "Cénacle de lumineux",
                     "cost": 25,
                     "type": "Farfadet"
                 },
                 {
-                    "name": "Trio des dÃ©sespoirs",
+                    "name": "Trio des désespoirs",
                     "cost": 25,
                     "type": "Farfadet"
                 },
@@ -583,13 +583,13 @@
                     "cost": 25,
                     "type": "Farfadet"
                 },
-                {
+			{
                     "name": "Essaim de vifs",
                     "cost": 25,
                     "type": "Farfadet"
                 },
                 {
-                    "name": "L'Ã©pÃ©e des esprits",
+                    "name": "L'épée des esprits",
                     "cost": 55,
                     "type": "Arme Magique"
                 },
@@ -614,7 +614,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "La lance du crÃ©puscule",
+                    "name": "La lance du crépuscule",
                     "cost": 30,
                     "type": "Arme Magique"
                 },
@@ -629,7 +629,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "L'Ã©pÃ©e des mille hivers",
+                    "name": "L'épée des mille hivers",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
@@ -639,182 +639,182 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "FlÃ©au d'Asyendi",
+                    "name": "Fléau d'Asyendi",
                     "cost": 10,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "L'armure de chÃªne",
+                    "name": "L'armure de chêne",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "La cape de Railaran",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Armure des fÃ©es",
+                    "name": "Armure des fées",
                     "cost": 35,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "La coiffe de la chasse",
                     "cost": 20,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Carapace de ronces",
                     "cost": 15,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "La harpe du Rhapsode",
                     "cost": 75,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Broche amarante",
                     "cost": 35,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pendentif d'ambre",
                     "cost": 35,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Galet protecteur",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
-                    "name": "Echeveau fÃ©Ã©rique",
+                    "name": "Echeveau féérique",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre de renaissance",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Eclat du grand hiver",
                     "cost": 25,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Gemme de Merciw",
                     "cost": 20,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre spectrale",
                     "cost": 50,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "FlÃ¨ches des sorciÃ¨res",
+                    "name": "Flèches des sorcières",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "Pierre de lune des sentiers cachÃ©s",
+                    "name": "Pierre de lune des sentiers cachés",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "GrÃªle de mort",
+                    "name": "Grêle de mort",
                     "cost": 30,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "FlÃ¨ches des Ã©toiles",
+                    "name": "Flèches des étoiles",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Cor des Asrai",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "FlÃ¨ches arcaniques",
+                    "name": "Flèches arcaniques",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Broche d'Elynett",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "FlÃ¨ches Dent-de-dragon",
+                    "name": "Flèches Dent-de-dragon",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Cor de Gwytherc",
                     "cost": 15,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Baguette d'orme blanc",
                     "cost": 55,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Thyrse de Calaingor",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Orbe de divination",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "SphÃ¨re des bois profonds",
+                    "name": "Sphère des bois profonds",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Pierre de coeur de Ranu",
                     "cost": 20,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "L'oriflamme Royal d'Ariel",
                     "cost": 100,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Graemrath, la banniÃ¨re des frimas",
+                    "name": "Graemrath, la bannière des frimas",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Faoghir, la banniÃ¨re du dÃ©clin",
+                    "name": "Faoghir, la bannière du déclin",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Saemrath, la bannniÃ¨re du zÃ©nith",
+                    "name": "Saemrath, la bannnière du zénith",
                     "cost": 25,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Aech, la banniÃ¨re du renouveau",
+                    "name": "Aech, la bannière du renouveau",
                     "cost": 25,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Lame de gÃ©ant",
+                    "name": "Lame de géant",
                     "cost": 60,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e sanglante",
+                    "name": "Epée sanglante",
                     "cost": 60,
                     "type": "Arme Magique"
                 },
@@ -829,7 +829,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e des guerres Ã©ternelles",
+                    "name": "Epée des guerres éternelles",
                     "cost": 40,
                     "type": "Arme Magique"
                 },
@@ -839,32 +839,32 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e tueuse de hÃ©ros",
+                    "name": "Epée tueuse de héros",
                     "cost": 30,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e voleuse de sorts",
+                    "name": "Epée voleuse de sorts",
                     "cost": 25,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de vive mort",
+                    "name": "Epée de vive mort",
                     "cost": 25,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de bataille",
+                    "name": "Epée de bataille",
                     "cost": 25,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de puissance",
+                    "name": "Epée de puissance",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e berserk",
+                    "name": "Epée berserk",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
@@ -874,7 +874,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de frappe",
+                    "name": "Epée de frappe",
                     "cost": 30,
                     "type": "Arme Magique"
                 },
@@ -884,7 +884,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e relique",
+                    "name": "Epée relique",
                     "cost": 10,
                     "type": "Arme Magique"
                 },
@@ -894,12 +894,12 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e du tourmenteur",
+                    "name": "Epée du tourmenteur",
                     "cost": 5,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "MalÃ©diction du guerrier",
+                    "name": "Malédiction du guerrier",
                     "cost": 5,
                     "type": "Arme Magique"
                 },
@@ -907,321 +907,321 @@
                     "name": "Armure du destin",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume du trompeur",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure de fer-argent",
                     "cost": 45,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Armure de bonne Ã©toile",
+                    "name": "Armure de bonne étoile",
                     "cost": 35,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume de discorde",
                     "cost": 30,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure resplendissante",
                     "cost": 25,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Bouclier de Ptolos",
                     "cost": 25,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Bouclier arcanique",
                     "cost": 20,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure du bienheureux",
                     "cost": 20,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume du dragon",
                     "cost": 10,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Bouclier enchantÃ©",
+                    "name": "Bouclier enchanté",
                     "cost": 10,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Bouclier ensorcelÃ©",
+                    "name": "Bouclier ensorcelé",
                     "cost": 5,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Talisman de prÃ©servation",
+                    "name": "Talisman de préservation",
                     "cost": 45,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre d'obsidienne",
                     "cost": 45,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Talisman d'endurance",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Amulette d'obsidienne",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre de l'aube",
                     "cost": 25,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Amulette d'opale",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Bague d'obsidienne",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Talisman de protection",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Graine de renaissance",
                     "cost": 10,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Gemme de dracodide",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pendentif en plumes d'aigle",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre de chance",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
-                    "name": "BanniÃ¨re du carnage",
+                    "name": "Bannière du carnage",
                     "cost": 55,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re hurlante",
+                    "name": "Bannière hurlante",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard du ranger",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard tranchant",
                     "cost": 45,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de guerre",
+                    "name": "Bannière de guerre",
                     "cost": 25,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de rapiditÃ©",
+                    "name": "Bannière de rapidité",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard en os de liche",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard de discipline",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de la flamme Ã©ternelle",
+                    "name": "Bannière de la flamme éternelle",
                     "cost": 10,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Oriflamme de lumiÃ¨re",
+                    "name": "Oriflamme de lumière",
                     "cost": 5,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re Ã©pouvantail",
+                    "name": "Bannière épouvantail",
                     "cost": 5,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Livre d'Ashur",
                     "cost": 75,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BÃ¢ton de sorcellerie",
+                    "name": "Bâton de sorcellerie",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de rebond",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin vampire",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin maudit de Sivejir",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de pouvoir",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Baguette de jais",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BÃ¢ton interdit",
+                    "name": "Bâton interdit",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Badine du trompeur",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Baguette tellurique",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de dissipation",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Pierre de pouvoir",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "Sceptre de stabilitÃ©",
+                    "name": "Sceptre de stabilité",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BÃ¢ton catalyseur",
+                    "name": "Bâton catalyseur",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de protection",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Chapeau de sorcier",
                     "cost": 100,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Forteresse pliable de Fozzrik",
                     "cost": 100,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Tapis d'Arabie",
                     "cost": 50,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Couronne de commandement",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion de soin",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "Torque du flÃ©au des plumes",
+                    "name": "Torque du fléau des plumes",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Anneau rubis de ruine",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Masque terrifiant de Aaah!",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion de force",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion d'endurance",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "L'autre badine du trompeur",
                     "cost": 15,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "IcÃ´ne du fer maudit",
+                    "name": "Icône du fer maudit",
                     "cost": 5,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "Potion d'impÃ©tuositÃ©",
+                    "name": "Potion d'impétuosité",
                     "cost": 5,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "Potion de cÃ©lÃ©ritÃ©",
+                    "name": "Potion de célérité",
                     "cost": 5,
-                    "type": "Objet enchantÃ©"
+                    "type": "Objet enchanté"
                 }
             ]
         },
@@ -1298,7 +1298,7 @@
                     "options":[] 
                 },
                 {
-                    "name": "Queek Coupe-tÃƒÂªtes",
+                    "name": "Queek Coupe-tÃªtes",
                     "cost": 215,
                     "finalcost" : 215,
                     "magicalobjects" : false,
@@ -1338,12 +1338,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Pistolet Ã  Malepierre",
+                            "name": "Pistolet Ã   Malepierre",
                             "cost": 8,
                             "costbyfig": false
                         },
                         {
-                            "name": "Mousquet Ã  Malepierre",
+                            "name": "Mousquet Ã   Malepierre",
                             "cost": 15,
                             "costbyfig": false
                         }
@@ -1396,12 +1396,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Encensoir Ã  peste",
+                            "name": "Encensoir Ã   peste",
                             "cost": 16,
                             "costbyfig": false
                         },
                         {
-                            "name": "FlÃƒÂ©au",
+                            "name": "FlÃ©au",
                             "cost": 4,
                             "costbyfig": false
                         },
@@ -1460,7 +1460,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Mortier Ã  Globes Toxiques",
+                            "name": "Mortier Ã   Globes Toxiques",
                             "cost": 65,
                             "costbyfig": false
                         },
@@ -1517,7 +1517,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Mortier Ã  Globes Toxiques",
+                            "name": "Mortier Ã   Globes Toxiques",
                             "cost": 65,
                             "costbyfig": false
                         },
@@ -1596,7 +1596,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Foreuse Ã  Malepierre",
+                            "name": "Foreuse Ã   Malepierre",
                             "cost": 60,
                             "costbyfig": false
                         }
@@ -1630,7 +1630,7 @@
                             "costbyfig": true
                         },
                         {
-                            "name": "Attaques EmpoisonnÃƒÂ©es",
+                            "name": "Attaques EmpoisonnÃ©es",
                             "cost": 5,
                             "costbyfig": true
                         },
@@ -1650,14 +1650,14 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Foreuse Ã  Malepierre",
+                            "name": "Foreuse Ã   Malepierre",
                             "cost": 60,
                             "costbyfig": false
                         }
                     ]
                 },
                 {
-                    "name": "Jezzails Ã  Malepierre",
+                    "name": "Jezzails Ã   Malepierre",
                     "cost": 20,
                     "min": 5,
                     "max": 0,
@@ -1695,7 +1695,7 @@
                     "options":[]
                 },
                 {
-                    "name": "Canon Ã  Malefosse",
+                    "name": "Canon Ã   Malefosse",
                     "cost": 90,
                     "min": 1,
                     "max": 1,
@@ -1732,14 +1732,15 @@
                     "type": "Talisman"
                 }
             ]
-        },
-        {
+        }
+    ]
+{
             "id": 4,
             "name": "Hauts elfes",
             "image": null,
             "description": "",
             "lords":[
-                {
+			{
                     "name": "Prince",
                     "cost": 140,
                     "finalcost" : 0,
@@ -1802,7 +1803,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "CaparaÃ§on d'ithilmar",
+                            "name": "Caparaçon d'ithilmar",
                             "cost": 7,
                             "costbyfig": false
                         },
@@ -1812,12 +1813,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Sens aiguisÃ©s",
+                            "name": "Sens aiguisés",
                             "cost": 10,
                             "costbyfig": false
                         },
                         {
-                            "name": "Serres affilÃ©es",
+                            "name": "Serres affilées",
                             "cost": 5,
                             "costbyfig": false
                         },
@@ -1827,12 +1828,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Plongeon en piquÃ©",
+                            "name": "Plongeon en piqué",
                             "cost": 25,
                             "costbyfig": false
                         },
                         {
-                            "name": "Sens aiguisÃ©s",
+                            "name": "Sens aiguisés",
                             "cost": 20,
                             "costbyfig": false
                         },
@@ -1855,10 +1856,10 @@
                             "name": "Dragon stellaire",
                             "cost": 390,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Archimage",
                     "cost": 185,
                     "finalcost" : 0,
@@ -1876,7 +1877,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "CaparaÃ§on d'ithilmar",
+                            "name": "Caparaçon d'ithilmar",
                             "cost": 7,
                             "costbyfig": false
                         },
@@ -1886,12 +1887,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Sens aiguisÃ©s",
+                            "name": "Sens aiguisés",
                             "cost": 10,
                             "costbyfig": false
                         },
                         {
-                            "name": "Serres affilÃ©es",
+                            "name": "Serres affilées",
                             "cost": 5,
                             "costbyfig": false
                         },
@@ -1914,10 +1915,10 @@
                             "name": "Dragon stellaire",
                             "cost": 390,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Elu d'Asuryan",
                     "cost": 210,
                     "finalcost" : 0,
@@ -1925,29 +1926,29 @@
                     "maxmagicalobjectscost" : 100,
                     "options":[
                         {
-                            "name": "PhÃ©nix Spire-de-feu",
+                            "name": "Phénix Spire-de-feu",
                             "cost": 225,
                             "costbyfig": false
                         },
                         {
-                            "name": "PhÃ©nix Coeur-de-givre",
+                            "name": "Phénix Coeur-de-givre",
                             "cost": 240,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
-                    "name": "MaÃ®tre du savoir de Hoeth",
+			{
+                    "name": "Maître du savoir de Hoeth",
                     "cost": 230,
                     "finalcost" : 0,
                     "magicalobjects" : true,
                     "maxmagicalobjectscost" : 100,
                     "options":[
                     ]
-                }
+                },
             ],
             "heroes":[
-                {
+			{
                     "name": "Noble",
                     "cost": 70,
                     "finalcost" : 0,
@@ -2010,7 +2011,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "CaparaÃ§on d'ithilmar",
+                            "name": "Caparaçon d'ithilmar",
                             "cost": 5,
                             "costbyfig": false
                         },
@@ -2020,12 +2021,12 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Sens aiguisÃ©s",
+                            "name": "Sens aiguisés",
                             "cost": 10,
                             "costbyfig": false
                         },
                         {
-                            "name": "Serres affilÃ©es",
+                            "name": "Serres affilées",
                             "cost": 5,
                             "costbyfig": false
                         },
@@ -2035,13 +2036,13 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Grande banniÃ¨re",
+                            "name": "Grande bannière",
                             "cost": 25,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Mage",
                     "cost": 85,
                     "finalcost" : 0,
@@ -2059,7 +2060,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "CaparaÃ§on d'ithilmar",
+                            "name": "Caparaçon d'ithilmar",
                             "cost": 5,
                             "costbyfig": false
                         },
@@ -2067,10 +2068,10 @@
                             "name": "Char de Tiranoc",
                             "cost": 70,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+			{
                     "name": "Mage dragon de Caledor",
                     "cost": 350,
                     "finalcost" : 0,
@@ -2086,10 +2087,10 @@
                             "name": "Armure de dragon",
                             "cost": 10,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+{
                     "name": "Heaume des mers de Lothern",
                     "cost": 100,
                     "finalcost" : 0,
@@ -2107,13 +2108,13 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "Grande banniÃ¨re",
+                            "name": "Grande bannière",
                             "cost": 25,
                             "costbyfig": false
-                        }
+                        },
                     ]
                 },
-                {
+{
                     "name": "Demoiselle d'honneur de la Reine Eternelle",
                     "cost": 95,
                     "finalcost" : 0,
@@ -2121,7 +2122,7 @@
                     "maxmagicalobjectscost" : 50,
                     "options":[
                     ]
-                }
+                },
             ],
             "cores":[
                 {
@@ -2151,70 +2152,70 @@
                         }
                     ]
                 },
-                {
-                    "name": "Archers",
-                    "cost": 10,
-                    "min": 10,
-                    "max": 0,
-                    "corepoints": true,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Armures lÃ©gÃ¨res",
-                            "cost": 1,
-                            "costbyfig": true
-                        }
-                    ]
-                },
-                {
-                    "name": "Gardes maritimes de Lothern",
-                    "cost": 11,
-                    "min": 10,
-                    "max": 0,
-                    "corepoints": true,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Boucliers",
-                            "cost": 1,
-                            "costbyfig": true
-                        }
-                    ]
-                },
+			{
+				"name": "Archers",
+				"cost": 10,
+				"min": 10,
+				"max": 0,
+				"corepoints": true,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Armures légères",
+						"cost": 1,
+						"costbyfig": true
+					}
+				]
+			},
+			{
+				"name": "Gardes maritimes de Lothern",
+				"cost": 11,
+				"min": 10,
+				"max": 0,
+				"corepoints": true,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Boucliers",
+						"cost": 1,
+						"costbyfig": true
+					}
+				]
+			},
                 {
                     "name": "Heaumes d'argent",
                     "cost": 21,
@@ -2225,28 +2226,28 @@
                     "magicalobjects" : false,
                     "maxmagicalobjectscost" : 0,
                     "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Boucliers",
-                            "cost": 2,
-                            "costbyfig": true
-                        }
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Boucliers",
+						"cost": 2,
+						"costbyfig": true
+					}
                     ]
-                },
+                }
                 {
                     "name": "Patrouilleurs Ellyriens",
                     "cost": 16,
@@ -2257,265 +2258,265 @@
                     "magicalobjects" : false,
                     "maxmagicalobjectscost" : 0,
                     "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Arcs",
-                            "cost": 3,
-                            "costbyfig": true
-                        },
-                        {
-                            "name": "Remplacer les lances par des arcs",
-                            "cost": 1,
-                            "costbyfig": true
-                        }
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Arcs",
+						"cost": 3,
+						"costbyfig": true
+					}
+					{
+						"name": "Remplacer les lances par des arcs",
+						"cost": 1,
+						"costbyfig": true
+					}
                     ]
                 }
             ],
             "specials":[
-                {
-                    "name": "Char Ã  lions de Chrace",
-                    "cost": 120,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                },
-                {
-                    "name": "Lions blancs de Chrace",
-                    "cost": 13,
-                    "min": 10,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "MaÃ®tres des Ã©pÃ©es de Hoeth",
-                    "cost": 13,
-                    "min": 5,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Guerriers fantÃ´mes",
-                    "cost": 14,
-                    "min": 5,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Gardes phÃ©nix",
-                    "cost": 15,
-                    "min": 10,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Princes dragons de Caledor",
-                    "cost": 29,
-                    "min": 5,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Etendard",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Musicien",
-                            "cost": 10,
-                            "costbyfig": false
-                        },
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Cotre volant de Lothern",
-                    "cost": 95,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Replacer un garde par une baliste Oeil-d'Aigle",
-                            "cost": 25,
-                            "costbyfig": false
-                        }
-                    ]
-                },
-                {
-                    "name": "Char de Tiranoc",
-                    "cost": 70,
-                    "min": 1,
-                    "max": 3,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                }
+			{
+				"name": "Char à lions de Chrace",
+				"cost": 120,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
+			{
+				"name": "Lions blancs de Chrace",
+				"cost": 13,
+				"min": 10,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Maîtres des épées de Hoeth",
+				"cost": 13,
+				"min": 5,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Guerriers fantômes",
+				"cost": 14,
+				"min": 5,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Gardes phénix",
+				"cost": 15,
+				"min": 10,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Princes dragons de Caledor",
+				"cost": 29,
+				"min": 5,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Etendard",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Musicien",
+						"cost": 10,
+						"costbyfig": false
+					}
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Cotre volant de Lothern",
+				"cost": 95,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Replacer un garde par une baliste Oeil-d'Aigle",
+						"cost": 25,
+						"costbyfig": false
+					}
+				]
+			},
+			{
+				"name": "Char de Tiranoc",
+				"cost": 70,
+				"min": 1,
+				"max": 3,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
             ],
             "rares":[
-                {
-                    "name": "Baliste Serre-d'Aigle",
-                    "cost": 70,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                },
-                {
-                    "name": "Grands aigles",
-                    "cost": 50,
-                    "min": 1,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Sens aiguisÃ©s",
-                            "cost": 10,
-                            "costbyfig": true
-                        },
-                        {
-                            "name": "Serres affilÃ©es",
-                            "cost": 5,
-                            "costbyfig": true
-                        }
-                    ]
-                },
-                {
-                    "name": "PhÃ©nix Spire-de-feu",
-                    "cost": 225,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                },
-                {
-                    "name": "PhÃ©nix Coeur-de-Givre",
-                    "cost": 240,
-                    "min": 1,
-                    "max": 1,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                    ]
-                },
-                {
-                    "name": "Soeurs d'Avelorn",
-                    "cost": 14,
-                    "min": 5,
-                    "max": 0,
-                    "finalcost": 0,
-                    "magicalobjects": false,
-                    "maxmagicalobjectscost": 0,
-                    "options":[
-                        {
-                            "name": "Champion",
-                            "cost": 10,
-                            "costbyfig": false
-                        }
-                    ]
-                }
+			{
+				"name": "Baliste Serre-d'Aigle",
+				"cost": 70,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
+			{
+				"name": "Grands aigles",
+				"cost": 50,
+				"min": 1,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Sens aiguisés",
+						"cost": 10,
+						"costbyfig": true
+					}
+					{
+						"name": "Serres affilées",
+						"cost": 5,
+						"costbyfig": true
+					}
+				]
+			},
+			{
+				"name": "Phénix Spire-de-feu",
+				"cost": 225,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
+			{
+				"name": "Phénix Coeur-de-Givre",
+				"cost": 240,
+				"min": 1,
+				"max": 1,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+				]
+			},
+			{
+				"name": "Soeurs d'Avelorn",
+				"cost": 14,
+				"min": 5,
+				"max": 0,
+				"finalcost": 0,
+				"magicalobjects": false,
+				"maxmagicalobjectscost": 0,
+				"options":[
+					{
+						"name": "Champion",
+						"cost": 10,
+						"costbyfig": false
+					}
+				]
+			},
             ],
             "magicobjects":[
                 {
@@ -2524,7 +2525,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "Lance des Ã©toiles",
+                    "name": "Lance des étoiles",
                     "cost": 30,
                     "type": "Arme Magique"
                 },
@@ -2532,64 +2533,64 @@
                     "name": "Arc du patrouilleur",
                     "cost": 25,
                     "type": "Arme magique"
-                },
+                }
                 {
                     "name": "Armure de Caledor",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Armure fantÃ´me",
+                    "name": "Armure fantôme",
                     "cost": 25,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Bouclier du wyrm des mers",
                     "cost": 15,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Couronne d'or d'Atrazar",
                     "cost": 10,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Fragment gardien de Moranion",
                     "cost": 50,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Anneau de fureur de Khaine",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Gemme de feu solaire",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Cape de barbes",
                     "cost": 10,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Livre de Hoeth",
                     "cost": 55,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BanniÃ¨re du dragon-monde",
+                    "name": "Bannière du dragon-monde",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
-                {
-                    "name": "Lame de gÃ©ant",
+                    "type": "Bannière magique"
+                }
+			{
+                    "name": "Lame de géant",
                     "cost": 60,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e sanglante",
+                    "name": "Epée sanglante",
                     "cost": 60,
                     "type": "Arme Magique"
                 },
@@ -2604,7 +2605,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e des guerres Ã©ternelles",
+                    "name": "Epée des guerres éternelles",
                     "cost": 40,
                     "type": "Arme Magique"
                 },
@@ -2614,32 +2615,32 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e tueuse de hÃ©ros",
+                    "name": "Epée tueuse de héros",
                     "cost": 30,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e voleuse de sorts",
+                    "name": "Epée voleuse de sorts",
                     "cost": 25,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de vive mort",
+                    "name": "Epée de vive mort",
                     "cost": 25,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de bataille",
+                    "name": "Epée de bataille",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de puissance",
+                    "name": "Epée de puissance",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e berserk",
+                    "name": "Epée berserk",
                     "cost": 20,
                     "type": "Arme Magique"
                 },
@@ -2649,7 +2650,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e de frappe",
+                    "name": "Epée de frappe",
                     "cost": 15,
                     "type": "Arme Magique"
                 },
@@ -2659,7 +2660,7 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e relique",
+                    "name": "Epée relique",
                     "cost": 10,
                     "type": "Arme Magique"
                 },
@@ -2669,12 +2670,12 @@
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "EpÃ©e du tourmenteur",
+                    "name": "Epée du tourmenteur",
                     "cost": 5,
                     "type": "Arme Magique"
                 },
                 {
-                    "name": "MalÃ©diction du guerrier",
+                    "name": "Malédiction du guerrier",
                     "cost": 5,
                     "type": "Arme Magique"
                 },
@@ -2682,318 +2683,318 @@
                     "name": "Armure du destin",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume du trompeur",
                     "cost": 50,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure de fer-argent",
                     "cost": 45,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Armure de bonne Ã©toile",
+                    "name": "Armure de bonne étoile",
                     "cost": 35,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume de discorde",
                     "cost": 30,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure resplendissante",
                     "cost": 25,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Bouclier de Ptolos",
                     "cost": 25,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Bouclier arcanique",
                     "cost": 20,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Armure du bienheureux",
                     "cost": 20,
                     "type": "Armure magique"
-                },
+                }
                 {
                     "name": "Heaume du dragon",
                     "cost": 10,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Bouclier enchantÃ©",
+                    "name": "Bouclier enchanté",
                     "cost": 5,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Bouclier ensorcelÃ©",
+                    "name": "Bouclier ensorcelé",
                     "cost": 5,
                     "type": "Armure magique"
-                },
+                }
                 {
-                    "name": "Talisman de prÃ©servation",
+                    "name": "Talisman de préservation",
                     "cost": 45,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre d'obsidienne",
                     "cost": 45,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Talisman d'endurance",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Amulette d'obsidienne",
                     "cost": 30,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre de l'aube",
                     "cost": 25,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Amulette d'opale",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Bague d'obsidienne",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Talisman de protection",
                     "cost": 15,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Graine de renaissance",
                     "cost": 10,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Gemme de dracodide",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pendentif en plumes d'aigle",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
                     "name": "Pierre de chance",
                     "cost": 5,
                     "type": "Talisman"
-                },
+                }
                 {
-                    "name": "BanniÃ¨re du carnage",
+                    "name": "Bannière du carnage",
                     "cost": 55,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re hurlante",
+                    "name": "Bannière hurlante",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard du ranger",
                     "cost": 50,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard tranchant",
                     "cost": 45,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de guerre",
+                    "name": "Bannière de guerre",
                     "cost": 35,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de rapiditÃ©",
+                    "name": "Bannière de rapidité",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard en os de liche",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Etendard de discipline",
                     "cost": 15,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re de la flamme Ã©ternelle",
+                    "name": "Bannière de la flamme éternelle",
                     "cost": 10,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "Oriflamme de lumiÃ¨re",
+                    "name": "Oriflamme de lumière",
                     "cost": 5,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
-                    "name": "BanniÃ¨re Ã©pouvantail",
+                    "name": "Bannière épouvantail",
                     "cost": 5,
-                    "type": "BanniÃ¨re magique"
-                },
+                    "type": "Bannière magique"
+                }
                 {
                     "name": "Livre d'Ashur",
                     "cost": 75,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de rebond",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin vampire",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin maudit de Sivejir",
                     "cost": 50,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de pouvoir",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Baguette de jais",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BÃ¢ton interdit",
+                    "name": "Bâton interdit",
                     "cost": 35,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Badine du trompeur",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Baguette tellurique",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de dissipation",
                     "cost": 25,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Pierre de pouvoir",
                     "cost": 20,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "Sceptre de stabilitÃ©",
+                    "name": "Sceptre de stabilité",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
-                    "name": "BÃ¢ton catalyseur",
+                    "name": "Bâton catalyseur",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Parchemin de protection",
                     "cost": 15,
                     "type": "Objet cabalistique"
-                },
+                }
                 {
                     "name": "Chapeau de sorcier",
                     "cost": 100,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Forteresse pliable de Fozzrik",
                     "cost": 100,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Tapis d'Arabie",
                     "cost": 50,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Couronne de commandement",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion de soin",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
-                    "name": "Torque du flÃ©au des plumes",
+                    "name": "Torque du fléau des plumes",
                     "cost": 35,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Anneau rubis de ruine",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Masque terrifiant de Aaah!",
                     "cost": 25,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion de force",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "Potion d'endurance",
                     "cost": 20,
-                    "type": "Objet enchantÃ©"
-                },
+                    "type": "Objet enchanté"
+                }
                 {
                     "name": "L'autre badine du trompeur",
                     "cost": 15,
-                    "type": "Objet enchantÃ©"
-                },
-                {
-                    "name": "IcÃ´ne du fer maudit",
-                    "cost": 5,
-                    "type": "Objet enchantÃ©"
-                },
-                {
-                    "name": "Potion d'impÃ©tuositÃ©",
-                    "cost": 5,
-                    "type": "Objet enchantÃ©"
-                },
-                {
-                    "name": "Potion de cÃ©lÃ©ritÃ©",
-                    "cost": 5,
-                    "type": "Objet enchantÃ©"
+                    "type": "Objet enchanté"
                 }
+                {
+                    "name": "Icône du fer maudit",
+                    "cost": 5,
+                    "type": "Objet enchanté"
+                }
+                {
+                    "name": "Potion d'impétuosité",
+                    "cost": 5,
+                    "type": "Objet enchanté"
+                }
+                {
+                    "name": "Potion de célérité",
+                    "cost": 5,
+                    "type": "Objet enchanté"
+                }
+
             ]
-        }
-    ]
+        },
 }
