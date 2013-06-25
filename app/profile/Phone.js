@@ -11,7 +11,7 @@ Ext.define('WarhammerBuilder.profile.Phone',{
             'Army.ComposeArmy.CoresComposition',
             'Army.ComposeArmy.SpecialsComposition',
             'Army.ComposeArmy.RaresComposition',
-            'Army.ComposeArmy.UnitComposition',
+            'Army.ComposeArmy.UnitComposition'
         ]
     },
     isActive: function(){

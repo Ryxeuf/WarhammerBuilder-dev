@@ -47,7 +47,7 @@ Ext.application({
     profiles:[
         'Phone',
         'Tablet',
-        'Desktop',
+        'Desktop'
     ],
 
     icon: {
