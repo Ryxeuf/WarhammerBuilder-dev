@@ -1261,16 +1261,19 @@
                         {
                             "name": "Rat-ogre Broyeur",
                             "cost": 65,
+                            "optiongroup": "monture",
                             "costbyfig": false
                         },
                         {
                             "name": "Litière de guerre",
                             "cost": 35,
+                            "optiongroup": "monture",
                             "costbyfig": false
                         },
                         {
                             "name": "Grand Rat Pesteux",
                             "cost": 30,
+                            "optiongroup": "monture",
                             "costbyfig": false
                         }
                     ]
@@ -1401,7 +1404,7 @@
                             "costbyfig": false
                         },
                         {
-                            "name": "FlÃ©au",
+                            "name": "Fléau",
                             "cost": 4,
                             "costbyfig": false
                         },
@@ -1462,21 +1465,25 @@
                         {
                             "name": "Mortier à Globes Toxiques",
                             "cost": 65,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Lance-feu",
                             "cost": 70,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Mitrailleuse ratling",
                             "cost": 55,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Ratasphère",
                             "cost": 55,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         }
                     ]
@@ -1514,26 +1521,39 @@
                         {
                             "name": "Grandes-dents",
                             "cost": 8,
-                            "costbyfig": false
+                            "costbyfig": false,
+                            "options": [
+                                {
+                                    "name": "Objet magique",
+                                    "cost": 0,
+                                    "maxcost" : 15,
+                                    "optiontype" : "magicalobject",
+                                    "costbyfig": false
+                                }
+                            ]
                         },
                         {
                             "name": "Mortier à Globes Toxiques",
                             "cost": 65,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Lance-feu",
                             "cost": 70,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Mitrailleuse ratling",
                             "cost": 55,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         },
                         {
                             "name": "Ratasphère",
                             "cost": 55,
+                            "optiongroup": "equipedarme",
                             "costbyfig": false
                         }
                     ]
@@ -1630,7 +1650,7 @@
                             "costbyfig": true
                         },
                         {
-                            "name": "Attaques EmpoisonnÃ©es",
+                            "name": "Attaques Empoisonnées",
                             "cost": 5,
                             "costbyfig": true
                         },

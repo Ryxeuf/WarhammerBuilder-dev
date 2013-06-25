@@ -50,7 +50,7 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy', {
             {
                 docked: 'bottom',
                 xtype: 'titlebar',
-                html: "0 pts",
+                html: "0 pts"
             }
         ]
     },

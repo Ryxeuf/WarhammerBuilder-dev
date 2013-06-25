@@ -3,7 +3,7 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.CoresComposition', {
     alias: 'widget.corescomposition',
     config: {
         title: "Bases",
-        styleHtmlContent: true,
+        // styleHtmlContent: true,
         items:[
             {
                 xtype: "selectfield",
