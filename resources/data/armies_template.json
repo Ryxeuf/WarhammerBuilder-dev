@@ -24,17 +24,23 @@
                             "optiongroup" : null,               /** Indique si l'option appartient à un groupe d'options dont un seul choix est possible
                                                                  * Facultatif (uniquement nécessaire si différent de la valeur par défaut)
                                                                  * Valeur par défaut: null
-                                                                 * Valeurs possibles: toute chaîne de caractères
+                                                                 * Valeurs possibles: tableau de chaînes de caractères avec # comme séparateur
+                                                                 */
+                            "parentoption" : null,               /** Indique si l'option dépend d'une autre option pour être activé
+                                                                 * Facultatif (uniquement nécessaire si différent de la valeur par défaut)
+                                                                 * Valeur par défaut: null
+                                                                 * Valeurs possibles: le nom de l'option parent
                                                                  */
                             "costbyfig": false,                  /** Indique si le coût est par figurine de l'unité ou pour l'unité
                                                                  * Valeur par défaut: false
                                                                  * Valeurs possibles: true, false
                                                                  * Facultatif (uniquement nécessaire si différent de la valeur par défaut)
                                                                  */ 
-                            /* "optiontype" : "option",            /** 
-                                                                 * Valeurs possibles: option, magicalobject
+                            "optiontype" : "choice",            /** 
+                                                                 * Valeur par défaut: choice (génère une checkbox)
+                                                                 * Valeurs possibles: choice, magicalobject, count
+                                                                 * Facultatif (uniquement nécessaire si différent de la valeur par défaut)
                                                                  */
-                            // "available" : 15,                   // Disponibilité de l'option par défaut
                             // "maxcost" : 15,                     // Cout maximum 
                         }
                     ]

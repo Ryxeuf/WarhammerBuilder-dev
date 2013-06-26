@@ -11,7 +11,8 @@ Ext.define('WarhammerBuilder.profile.Desktop',{
             'Army.ComposeArmy.CoresComposition',
             'Army.ComposeArmy.SpecialsComposition',
             'Army.ComposeArmy.RaresComposition',
-            'Army.ComposeArmy.UnitComposition'
+            'Army.ComposeArmy.UnitComposition',
+            'Army.ComposeArmy.MagicalObjectList'
         ]
     },
     isActive: function(){

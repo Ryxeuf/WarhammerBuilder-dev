@@ -74,6 +74,15 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         Ext.getCmp("coreSelection").setStore(this.army.coresStore);
         Ext.getCmp("specialSelection").setStore(this.army.specialsStore);
         Ext.getCmp("rareSelection").setStore(this.army.raresStore);
+        this.army.magicobjectsStore.setGrouper({
+            groupFn: function(record) {
+                return record.get('type');
+            },
+            sortProperty: 'type'
+        });
+        console.log("this.army.magicobjectsStore");
+        console.log(this.army.magicobjectsStore);
+        Ext.getCmp("magicalObjectList").setStore(this.army.magicobjectsStore);
     },
     lordUnitSelection: function(){
         console.log("lordUnitSelection");
@@ -125,7 +134,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
 
         var options = [];
         datas.options.forEach(function(option){
-            options.push(me.generateCheckOption(view, option));
+            options = options.concat(me.generateOption(view, option));
         });
         options = (options.length != 0)? options: { html: "<i>Aucune option disponible</i>" };
 
@@ -200,49 +209,90 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
 
         view.setItems(items);
     },
-    generateCheckOption: function(view, option){
+    generateOption: function(view, option){
         var me = this;
-        return {
-            xtype: 'checkboxfield',
-            name : option.name,
-            label: option.name+" <i style='position: relative; float: right;'>"+option.cost+" pts"+((option.costbyfig)?" / fig":"")+"</i>",
-            labelWidth: "90%",
-            data: option,
-            listeners:[
-                {
-                    event: 'check',
-                    fn: function(){ 
-                        me.checkOption(this, view);
-                        view.parent.parent.fireEvent("updateCost", view); 
-                    }
-                },
-                {
-                    event: 'uncheck',
-                    fn: function(){ 
-                        me.uncheckOption(this, view);
-                        view.parent.parent.fireEvent("updateCost", view); 
-                    }
-                }
-            ]
-        };
+        var options = [];
+        var disabled = (option.parentoption == null)?false:true;
+        switch(option.optiontype){
+            case "choice":
+                options.push({
+                    xtype: "checkboxfield",
+                    name : option.name,
+                    label: option.name+" <i style='position: relative; float: right;'>"+option.cost+" pts"+((option.costbyfig)?" / fig":"")+"</i>",
+                    labelWidth: "90%",
+                    data: option,
+                    disabled: disabled,
+                    listeners:[
+                        {
+                            event: 'check',
+                            fn: function(){ 
+                                me.checkOption(this, view);
+                                view.parent.parent.fireEvent("updateCost", view); 
+                            }
+                        },
+                        {
+                            event: 'uncheck',
+                            fn: function(){ 
+                                me.uncheckOption(this, view);
+                                view.parent.parent.fireEvent("updateCost", view); 
+                            }
+                        }
+                    ]
+                });
+            break;
+            case "count":
+                options.push({
+                    xtype: "spinnerfield",
+                    name : option.name,
+                    label: option.name+" <i style='position: relative; float: right;'>"+option.cost+" pts"+((option.costbyfig)?" / fig":"")+"</i>",
+                    labelWidth: "90%",
+                    data: option,
+                    hidden: disabled,
+                    groupButtons: false,
+                    stepValue: 1,
+                    minValue: 0,
+                    maxValue: 100000,
+                    value: 0,
+                    listeners:[
+                        {
+                            event: 'change',
+                            fn: function(){ 
+                                view.parent.parent.fireEvent("updateCost", view); 
+                            }
+                        }
+                    ]
+                });
+            break;
+            case "magicalobject":
+
+            break;
+        }
+
+        option.options.forEach(function(suboption){
+            console.log("suboption");
+            console.log(suboption);
+            suboption.parentoption = option.name;
+            options = options.concat(me.generateOption(view, suboption));
+        });
+
+        return options;
     },
     checkOption: function(item, view){
         console.log("checkOption");
         console.log(item);
         var me = this;
-        var option = item.getData();
         // On désactive les autres options appartenant au même groupe pour éviter des choix impossibles
         item.up().getItems().each(function(element){
             if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup && element.getData().name != item.getData().name){
                 element.disable();
             }
         });
-        // TODO: On ajoute les sous-options dûes à la sélection
-        var options = [];
-        option.options.forEach(function(suboption){
-            options.push(me.generateCheckOption(view, suboption));
+        // On active (show) mes options débloquées par le cochage
+        item.up().getItems().each(function(element){
+            if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
+                element.show();
+            }
         });
-        // item.setItems(options);
     },
     uncheckOption: function(item, view){
         console.log("uncheckOption");
@@ -254,7 +304,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 element.enable();
             }
         });
-        // TODO: On retire les sous-options dûes à la désélection
+        // On désactive (hide) mes options débloquées par le cochage
+        item.up().getItems().each(function(element){
+            if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
+                element.hide();
+            }
+        });
     },
     updateCost: function(view){
         console.log("updateCost");
@@ -264,14 +319,19 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         var figCost = view.getData().cost;
         var optionsCost = 0;
         Ext.getCmp(view.id+"-options").getItems().each(function(option){
-            if(!option.isXType("checkboxfield"))
-                return;
-            if(option.isChecked()){
-                var costbyfigFactor = 1;
-                if(option.getData().costbyfig){
-                    costbyfigFactor = nbFig;
-                }
-                optionsCost += option.getData().cost*costbyfigFactor;
+            switch(option.xtype){
+                case "checkboxfield":
+                    if(option.isChecked()){
+                        var costbyfigFactor = 1;
+                        if(option.getData().costbyfig){
+                            costbyfigFactor = nbFig;
+                        }
+                        optionsCost += option.getData().cost*costbyfigFactor;
+                    }
+                break;
+                case "spinnerfield":
+                    optionsCost += option.getData().cost*option.getValue();
+                break;
             }
 
         });

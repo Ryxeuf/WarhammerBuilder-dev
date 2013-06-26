@@ -37,17 +37,14 @@
                         {
                             "name": "Etendard",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 12,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -64,7 +61,6 @@
                         {
                             "name": "Tupak",
                             "cost": 6,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -118,42 +114,34 @@
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme Lourde",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure légère",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 18,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon des forêts",
                             "cost": 320,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -167,27 +155,22 @@
                         {
                             "name": "Niveau 4",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Clan tisserêve",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Licorne",
                             "cost": 65,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 18,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -212,42 +195,34 @@
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme Lourde",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure légère",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grande bannière",
                             "cost": 15,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -261,22 +236,18 @@
                         {
                             "name": "Niveau 2",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Clan tisserêve",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Licorne",
                             "cost": 65,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 12,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -290,7 +261,6 @@
                         {
                             "name": "Niveau 1",
                             "cost": 50,
-                            "costbyfig": false
                         }
                     ]
                 }
@@ -309,17 +279,14 @@
                         {
                             "name": "Etendard",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 6,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -336,17 +303,14 @@
                         {
                             "name": "Etendard",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 6,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -363,17 +327,14 @@
                         {
                             "name": "Etendard",
                             "cost": 18,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 9,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 9,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -390,7 +351,6 @@
                         {
                             "name": "Championne",
                             "cost": 12,
-                            "costbyfig": false
                         }
                     ]
                 }
@@ -408,17 +368,14 @@
                         {
                             "name": "Etendard",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 12,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -434,12 +391,10 @@
                         {
                             "name": "Musicien",
                             "cost": 7,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 14,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -455,7 +410,6 @@
                         {
                             "name": "Champion",
                             "cost": 20,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -471,17 +425,14 @@
                         {
                             "name": "Etendard",
                             "cost": 18,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 0,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 18,
-                            "costbyfig": false
                         }
                     ]
                 },            
@@ -497,7 +448,6 @@
                         {
                             "name": "Champion",
                             "cost": 20,
-                            "costbyfig": false
                         }
                     ]
                 }
@@ -515,7 +465,6 @@
                         {
                             "name": "Champion",
                             "cost": 8,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1241,40 +1190,33 @@
                         {
                             "name": "Arme Lourde",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Hallebarde",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Rat-ogre Broyeur",
                             "cost": 65,
                             "optiongroup": "monture",
-                            "costbyfig": false
                         },
                         {
                             "name": "Litière de guerre",
                             "cost": 35,
                             "optiongroup": "monture",
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand Rat Pesteux",
                             "cost": 30,
                             "optiongroup": "monture",
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1288,7 +1230,6 @@
                         {
                             "name": "Cloche Hurlante",
                             "cost": 200,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1301,7 +1242,7 @@
                     "options":[] 
                 },
                 {
-                    "name": "Queek Coupe-tÃªtes",
+                    "name": "Queek Coupe-têtes",
                     "cost": 215,
                     "finalcost" : 215,
                     "magicalobjects" : false,
@@ -1328,27 +1269,22 @@
                         {
                             "name": "Sorcier de niveau 1",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Sorcier de niveau 2",
                             "cost": 85,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme de Technomage",
                             "cost": 45,
-                            "costbyfig": false
                         },
                         {
                             "name": "Pistolet à Malepierre",
                             "cost": 8,
-                            "costbyfig": false
                         },
                         {
                             "name": "Mousquet à Malepierre",
                             "cost": 15,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1362,27 +1298,22 @@
                         {
                             "name": "Arme Lourde",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Hallebarde",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grande Bannière",
                             "cost": 25,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1396,32 +1327,26 @@
                         {
                             "name": "Sorcier niveau 2",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Encensoir à peste",
                             "cost": 16,
-                            "costbyfig": false
                         },
                         {
                             "name": "Fléau",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand Rat Pesteux",
                             "cost": 30,
-                            "costbyfig": false
                         },
                         {
                             "name": "Creuset de la Peste",
                             "cost": 150,
-                            "costbyfig": false
                         }
                     ]
                 }
@@ -1449,42 +1374,35 @@
                         },
                         {
                             "name": "Etendard",
-                            "cost": 8,
-                            "costbyfig": false
+                            "cost": 8
                         },
                         {
                             "name": "Musicien",
-                            "cost": 4,
-                            "costbyfig": false
+                            "cost": 4
                         },
                         {
                             "name": "Grandes-griffes",
-                            "cost": 8,
-                            "costbyfig": false
+                            "cost": 8
                         },
                         {
                             "name": "Mortier à Globes Toxiques",
                             "cost": 65,
-                            "optiongroup": "equipedarme",
-                            "costbyfig": false
+                            "optiongroup": "equipedarme"
                         },
                         {
                             "name": "Lance-feu",
                             "cost": 70,
-                            "optiongroup": "equipedarme",
-                            "costbyfig": false
+                            "optiongroup": "equipedarme"
                         },
                         {
                             "name": "Mitrailleuse ratling",
                             "cost": 55,
-                            "optiongroup": "equipedarme",
-                            "costbyfig": false
+                            "optiongroup": "equipedarme"
                         },
                         {
                             "name": "Ratasphère",
                             "cost": 55,
-                            "optiongroup": "equipedarme",
-                            "costbyfig": false
+                            "optiongroup": "equipedarme"
                         }
                     ]
                 },
@@ -1510,25 +1428,21 @@
                         },
                         {
                             "name": "Etendard",
-                            "cost": 8,
-                            "costbyfig": false
+                            "cost": 8
                         },
                         {
                             "name": "Musicien",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grandes-dents",
                             "cost": 8,
-                            "costbyfig": false,
                             "options": [
                                 {
                                     "name": "Objet magique",
                                     "cost": 0,
                                     "maxcost" : 15,
-                                    "optiontype" : "magicalobject",
-                                    "costbyfig": false
+                                    "optiontype" : "magicalobject"
                                 }
                             ]
                         },
@@ -1536,25 +1450,21 @@
                             "name": "Mortier à Globes Toxiques",
                             "cost": 65,
                             "optiongroup": "equipedarme",
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance-feu",
                             "cost": 70,
                             "optiongroup": "equipedarme",
-                            "costbyfig": false
                         },
                         {
                             "name": "Mitrailleuse ratling",
                             "cost": 55,
                             "optiongroup": "equipedarme",
-                            "costbyfig": false
                         },
                         {
                             "name": "Ratasphère",
                             "cost": 55,
                             "optiongroup": "equipedarme",
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1586,12 +1496,10 @@
                         {
                             "name": "Musicien",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grandes-pattes",
                             "cost": 4,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1613,12 +1521,10 @@
                         {
                             "name": "Grande-cape",
                             "cost": 8,
-                            "costbyfig": false
                         },
                         {
                             "name": "Foreuse à Malepierre",
                             "cost": 60,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1657,22 +1563,18 @@
                         {
                             "name": "Coureur Mortel",
                             "cost": 12,
-                            "costbyfig": false
                         },
                         {
                             "name": "Fumigènes",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lame Suintante",
                             "cost": 30,
-                            "costbyfig": false
                         },
                         {
                             "name": "Foreuse à Malepierre",
                             "cost": 60,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1688,7 +1590,6 @@
                         {
                             "name": "Oeil de Rat-lynx",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 }
@@ -1769,112 +1670,90 @@
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Hallebarde",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance de cavalerie",
                             "cost": 7,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme Lourde",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arc long",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure lourde",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure de dragon",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 3,
-                            "costbyfig": false
                         },
                         {
                             "name": "Cape de lion",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Caparaçon d'ithilmar",
                             "cost": 7,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Sens aiguisés",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Serres affilées",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Griffon",
                             "cost": 150,
-                            "costbyfig": false
                         },
                         {
                             "name": "Plongeon en piqué",
                             "cost": 25,
-                            "costbyfig": false
                         },
                         {
                             "name": "Sens aiguisés",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Char de Tiranoc",
                             "cost": 70,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon solaire",
                             "cost": 235,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon lunaire",
                             "cost": 300,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon stellaire",
                             "cost": 390,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1888,52 +1767,42 @@
                         {
                             "name": "Niveau 4",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 20,
-                            "costbyfig": false
                         },
                         {
                             "name": "Caparaçon d'ithilmar",
                             "cost": 7,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Sens aiguisés",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Serres affilées",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Char de Tiranoc",
                             "cost": 70,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon solaire",
                             "cost": 235,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon lunaire",
                             "cost": 300,
-                            "costbyfig": false
                         },
                         {
                             "name": "Dragon stellaire",
                             "cost": 390,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1947,12 +1816,10 @@
                         {
                             "name": "Phénix Spire-de-feu",
                             "cost": 225,
-                            "costbyfig": false
                         },
                         {
                             "name": "Phénix Coeur-de-givre",
                             "cost": 240,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -1977,87 +1844,70 @@
                         {
                             "name": "Arme de base additionnelle",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Hallebarde",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arme Lourde",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Lance de cavalerie",
                             "cost": 6,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arc long",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure lourde",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure de dragon",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Bouclier",
                             "cost": 2,
-                            "costbyfig": false
                         },
                         {
                             "name": "Cape de lion",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Caparaçon d'ithilmar",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grand aigle",
                             "cost": 50,
-                            "costbyfig": false
                         },
                         {
                             "name": "Sens aiguisés",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Serres affilées",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Char de Tiranoc",
                             "cost": 70,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grande bannière",
                             "cost": 25,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2071,22 +1921,18 @@
                         {
                             "name": "Niveau 2",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Coursier elfique",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Caparaçon d'ithilmar",
                             "cost": 5,
-                            "costbyfig": false
                         },
                         {
                             "name": "Char de Tiranoc",
                             "cost": 70,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2100,12 +1946,10 @@
                         {
                             "name": "Niveau 2",
                             "cost": 35,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armure de dragon",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2119,17 +1963,14 @@
                         {
                             "name": "Arc",
                             "cost": 4,
-                            "costbyfig": false
                         },
                         {
                             "name": "Cotre volant de Lothern",
                             "cost": 95,
-                            "costbyfig": false
                         },
                         {
                             "name": "Grande bannière",
                             "cost": 25,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2157,17 +1998,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2184,17 +2022,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Armures légères",
@@ -2216,17 +2051,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Boucliers",
@@ -2248,17 +2080,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Boucliers",
@@ -2280,17 +2109,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Arcs",
@@ -2329,17 +2155,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2355,17 +2178,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2381,7 +2201,6 @@
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2397,17 +2216,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2423,17 +2239,14 @@
                         {
                             "name": "Etendard",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Musicien",
                             "cost": 10,
-                            "costbyfig": false
                         },
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2449,7 +2262,6 @@
                         {
                             "name": "Replacer un garde par une baliste Oeil-d'Aigle",
                             "cost": 25,
-                            "costbyfig": false
                         }
                     ]
                 },
@@ -2532,7 +2344,6 @@
                         {
                             "name": "Champion",
                             "cost": 10,
-                            "costbyfig": false
                         }
                     ]
                 }

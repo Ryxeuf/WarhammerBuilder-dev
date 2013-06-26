@@ -5,7 +5,8 @@ Ext.define('WarhammerBuilder.model.MagicalObjectModel', {
         fields: [
             { name: 'name', type: 'string' },
             { name: 'cost', type: 'float' },
-            { name: 'type', type: 'string' }
+            { name: 'type', type: 'string' },
+            { name: 'description', type: 'string' }
         ]
     }
 });
