@@ -1428,7 +1428,15 @@
                         },
                         {
                             "name": "Etendard",
-                            "cost": 8
+                            "cost": 8,
+                            "options": [
+                                {
+                                    "name": "Bannière magique",
+                                    "cost": 0,
+                                    "maxcost" : 50,
+                                    "optiontype" : "magicalobject"
+                                }
+                            ]
                         },
                         {
                             "name": "Musicien",
@@ -1525,6 +1533,31 @@
                         {
                             "name": "Foreuse à Malepierre",
                             "cost": 60,
+                        }
+                    ]
+                },
+                {
+                    "name": "Rats géants",
+                    "cost": 3,
+                    "min": 5,
+                    "max": 0,
+                    "corepoints": false,
+                    "finalcost" : 0,
+                    "options":[
+                        {
+                            "name": "Chef de Meute",
+                            "cost": 8,
+                            "min": 1,
+                            "optiontype" : "count"
+                        },
+                        {
+                            "name": "Maître Corrupteur",
+                            "cost": 25,
+                            "optiontype" : "count"
+                        },
+                        {
+                            "name": "Skweel le Rongeur",
+                            "cost": 100
                         }
                     ]
                 },

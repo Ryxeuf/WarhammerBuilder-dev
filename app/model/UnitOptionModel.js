@@ -6,6 +6,7 @@ Ext.define('WarhammerBuilder.model.UnitOptionModel', {
             { name: 'name', type: 'string' },
             { name: 'cost', type: 'float' },
             { name: 'optiontype', type: 'string', defaultValue: "choice" },
+            { name: 'min', type: 'int', defaultValue: 0 },
             { name: 'maxcost', type: 'int', defaultValue: 0 },
             { name: 'optiongroup', type: 'string', defaultValue: null },
             { name: 'parentoption', type: 'string', defaultValue: null },

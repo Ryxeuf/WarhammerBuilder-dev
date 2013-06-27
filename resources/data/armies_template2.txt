@@ -1,0 +1,450 @@
+{
+    "armies": [
+        {
+            "id": 1,            // Id de l'armée
+            "name": "Army",     // Nom de l'armée
+            "image": null,      // Une image de présentation
+            "description": "",  // Description de l'armée
+            "lords":[               // Seigneurs
+            ],
+            "heroes":[              // Héros
+            ],
+            "cores":[               // Unités de base
+                {
+                    "name": "Unit",         // Nom de l'unité
+                    "cost": 11,             // Coût d'une figurine
+                    "min": 10,              // Nombre minimum de figurine e l'unité
+                    "max": 0,               // Nombre maximum de figurine dans l'unité (0 indique qu'il n'y a pas de maximum)
+                    "corepoints": true,     // Indique si le coût de l'unité compte dans les points de base de l'armée
+                    "finalcost": 0,         // Cout final de l'unité, calculé par l'application
+                    "options":[             // Tableau des options disponibles pour l'unité
+                        {
+                            "name": "Option",       // Nom de l'option
+                            "cost": 10,              // Coût de l'option
+                            "costbyfig": true       // Indique si le coût est par figurine de l'unité ou pour l'unité
+                        }
+                    ]
+                }
+            ],
+            "specials":[            // Unités spéciales
+            ],
+            "rares":[               // Unités rares
+            ]
+        }
+    ]
+}
+
+
+Objets magiques communs :
+[
+    {
+        "name": "Lame de géant",
+        "cost": 60,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée sanglante",
+        "cost": 60,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lame d'obsidienne",
+        "cost": 50,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lame ogre",
+        "cost": 40,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée des guerres éternelles",
+        "cost": 40,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lames d'escrimeur",
+        "cost": 35,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée tueuse de héros",
+        "cost": 30,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée voleuse de sorts",
+        "cost": 25,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée de vive mort",
+        "cost": 25,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée de bataille",
+        "cost": 20,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée de puissance",
+        "cost": 20,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée berserk",
+        "cost": 20,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lame d'or vif",
+        "cost": 15,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée de frappe",
+        "cost": 15,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lame de morsure",
+        "cost": 10,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée relique",
+        "cost": 10,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Lame hurlante",
+        "cost": 10,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Epée du tourmenteur",
+        "cost": 5,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Malédiction du guerrier",
+        "cost": 5,
+        "type": "Arme Magique"
+    },
+    {
+        "name": "Armure du destin",
+        "cost": 50,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Heaume du trompeur",
+        "cost": 50,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Armure de fer-argent",
+        "cost": 45,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Armure de bonne étoile",
+        "cost": 35,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Heaume de discorde",
+        "cost": 30,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Armure resplendissante",
+        "cost": 25,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Bouclier de Ptolos",
+        "cost": 25,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Bouclier arcanique",
+        "cost": 20,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Armure du bienheureux",
+        "cost": 20,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Heaume du dragon",
+        "cost": 10,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Bouclier enchanté",
+        "cost": 5,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Bouclier ensorcelé",
+        "cost": 5,
+        "type": "Armure magique"
+    },
+    {
+        "name": "Talisman de préservation",
+        "cost": 45,
+        "type": "Talisman"
+    },
+    {
+        "name": "Pierre d'obsidienne",
+        "cost": 45,
+        "type": "Talisman"
+    },
+    {
+        "name": "Talisman d'endurance",
+        "cost": 30,
+        "type": "Talisman"
+    },
+    {
+        "name": "Amulette d'obsidienne",
+        "cost": 30,
+        "type": "Talisman"
+    },
+    {
+        "name": "Pierre de l'aube",
+        "cost": 25,
+        "type": "Talisman"
+    },
+    {
+        "name": "Amulette d'opale",
+        "cost": 15,
+        "type": "Talisman"
+    },
+    {
+        "name": "Bague d'obsidienne",
+        "cost": 15,
+        "type": "Talisman"
+    },
+    {
+        "name": "Talisman de protection",
+        "cost": 15,
+        "type": "Talisman"
+    },
+    {
+        "name": "Graine de renaissance",
+        "cost": 10,
+        "type": "Talisman"
+    },
+    {
+        "name": "Gemme de dracodide",
+        "cost": 5,
+        "type": "Talisman"
+    },
+    {
+        "name": "Pendentif en plumes d'aigle",
+        "cost": 5,
+        "type": "Talisman"
+    },
+    {
+        "name": "Pierre de chance",
+        "cost": 5,
+        "type": "Talisman"
+    },
+    {
+        "name": "Bannière du carnage",
+        "cost": 55,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Bannière hurlante",
+        "cost": 50,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Etendard du ranger",
+        "cost": 50,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Etendard tranchant",
+        "cost": 45,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Bannière de guerre",
+        "cost": 35,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Bannière de rapiditè",
+        "cost": 15,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Etendard en os de liche",
+        "cost": 15,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Etendard de discipline",
+        "cost": 15,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Bannière de la flamme éternelle",
+        "cost": 10,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Oriflamme de lumière",
+        "cost": 5,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Bannière épouvantail",
+        "cost": 5,
+        "type": "Bannière magique"
+    },
+    {
+        "name": "Livre d'Ashur",
+        "cost": 75,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin de rebond",
+        "cost": 50,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin vampire",
+        "cost": 50,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin maudit de Sivejir",
+        "cost": 50,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin de pouvoir",
+        "cost": 35,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Baguette de jais",
+        "cost": 35,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Bâton interdit",
+        "cost": 35,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Badine du trompeur",
+        "cost": 25,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Baguette tellurique",
+        "cost": 25,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin de dissipation",
+        "cost": 25,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Pierre de pouvoir",
+        "cost": 20,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Sceptre de stabilité",
+        "cost": 15,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Bâton catalyseur",
+        "cost": 15,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Parchemin de protection",
+        "cost": 15,
+        "type": "Objet cabalistique"
+    },
+    {
+        "name": "Chapeau de sorcier",
+        "cost": 100,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Forteresse pliable de Fozzrik",
+        "cost": 100,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Tapis d'Arabie",
+        "cost": 50,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Couronne de commandement",
+        "cost": 35,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Potion de soin",
+        "cost": 35,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Torque du fléau des plumes",
+        "cost": 35,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Anneau rubis de ruine",
+        "cost": 25,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Masque terrifiant de Aaah!",
+        "cost": 25,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Potion de force",
+        "cost": 20,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Potion d'endurance",
+        "cost": 20,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "L'autre badine du trompeur",
+        "cost": 15,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Icône du fer maudit",
+        "cost": 5,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Potion d'impétuosité",
+        "cost": 5,
+        "type": "Objet enchanté"
+    },
+    {
+        "name": "Potion de célérité",
+        "cost": 5,
+        "type": "Objet enchanté"
+    }
+]

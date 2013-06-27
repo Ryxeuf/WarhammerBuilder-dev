@@ -208,6 +208,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         items.push(tpl);
 
         view.setItems(items);
+        this.updateCost(view);
     },
     generateOption: function(view, option){
         var me = this;
@@ -250,9 +251,9 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                     hidden: disabled,
                     groupButtons: false,
                     stepValue: 1,
-                    minValue: 0,
+                    minValue: option.min,
                     maxValue: 100000,
-                    value: 0,
+                    value: option.min,
                     listeners:[
                         {
                             event: 'change',
