@@ -22,6 +22,8 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 configureRareUnit: "rareUnitSelection",
                 backButtonTap: "backHome",
                 updateCost: "updateCost",
+                magicalObjectInfos: "displayMagicalObjectInfos",
+                validateMagicalObject: "validateMagicalObject",
                 engageUnit: "engageUnit"
             },
             unitComposition:{
@@ -47,6 +49,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     /*********************************************************************************************************************/
     /*********************************************************************************************************************/
     army: null,
+    magicalObjectList: null,
     displayArmyList: function(view, index, target, record){
         console.log("displayArmyList");
         this.army = record;
@@ -82,7 +85,11 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         });
         console.log("this.army.magicobjectsStore");
         console.log(this.army.magicobjectsStore);
-        Ext.getCmp("magicalObjectList").setStore(this.army.magicobjectsStore);
+        var objects = Ext.getStore("MagicalObjectStore");
+        console.log("objects");
+        console.log(objects);
+        this.magicalObjectList = objects;
+        // Ext.getCmp("magicalObjectList").setStore(objects);
     },
     lordUnitSelection: function(){
         console.log("lordUnitSelection");
@@ -265,6 +272,37 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 });
             break;
             case "magicalobject":
+                options.push(
+                {
+                    xtype: "container",
+                    hidden: disabled,
+                    data: option,
+                    items: [
+                        {
+                            xtype: "checkboxfield",
+                            name : option.name,
+                            label: "Objet(s) magique(s)",//+" <i style='position: relative; float: right;'>"+option.cost+" pts"+((option.costbyfig)?" / fig":"")+"</i>",
+                            labelWidth: "90%",
+                            data: option,
+                            listeners:[
+                                {
+                                    event: 'check',
+                                    fn: function(){ 
+                                        me.checkOption(this, view);
+                                        // view.parent.parent.fireEvent("updateCost", view); 
+                                    }
+                                },
+                                {
+                                    event: 'uncheck',
+                                    fn: function(){ 
+                                        me.uncheckOption(this, view);
+                                        // view.parent.parent.fireEvent("updateCost", view); 
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                });
 
             break;
         }
@@ -282,35 +320,57 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         console.log("checkOption");
         console.log(item);
         var me = this;
-        // On désactive les autres options appartenant au même groupe pour éviter des choix impossibles
-        item.up().getItems().each(function(element){
-            if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup && element.getData().name != item.getData().name){
-                element.disable();
-            }
-        });
-        // On active (show) mes options débloquées par le cochage
-        item.up().getItems().each(function(element){
-            if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
-                element.show();
-            }
-        });
+
+        if(item.getData().optiontype == "magicalobject"){
+            console.log("OptionMagique");
+            // console.log(element);
+            // On se trouve sur une option de type "objet magique"
+            var listmodal = Ext.create('widget.magicalobjectchoice');
+            Ext.Viewport.add(listmodal);
+            listmodal.initList(this.magicalObjectList, item.getData().cost);
+            listmodal.parentView = view;
+            listmodal.show();
+        }else{
+            // On désactive les autres options appartenant au même groupe pour éviter des choix impossibles
+            item.up().getItems().each(function(element){
+                if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup && element.getData().name != item.getData().name){
+                    element.disable();
+                }
+            });
+            // On active (show) mes options débloquées par le cochage
+            item.up().getItems().each(function(element){
+                if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
+                    element.show();
+                }
+            });
+        }
     },
     uncheckOption: function(item, view){
         console.log("uncheckOption");
         var me = this;
         var option = item.getData();
-        // Comme l'option esrt annulée, on réactive les autres options du même groupe
-        item.up().getItems().each(function(element){
-            if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup){
-                element.enable();
-            }
-        });
-        // On désactive (hide) mes options débloquées par le cochage
-        item.up().getItems().each(function(element){
-            if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
-                element.hide();
-            }
-        });
+
+        if(item.getData().parentoption != null){
+            // On se trouve sur une option de type "objet magique"
+        }else{        
+            // Comme l'option esrt annulée, on réactive les autres options du même groupe
+            item.up().getItems().each(function(element){
+                if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup){
+                    element.enable();
+                }
+            });
+            // On désactive (hide) mes options débloquées par le cochage
+            item.up().getItems().each(function(element){
+                if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
+                    element.hide();
+                }
+            });
+        }
+    },
+    validateMagicalObject: function(optionList){
+        console.log("optionList");
+        console.log(optionList);
+
     },
     updateCost: function(view){
         console.log("updateCost");
@@ -354,5 +414,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         console.log("engageUnit");
         console.log(view);
         console.log(view.up());
+    },
+
+
+
+
+    displayMagicalObjectInfos: function(record){
+        Ext.Msg.alert(null, record.get("description"), Ext.emptyFn);
     }
 });

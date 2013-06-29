@@ -3,11 +3,15 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.MagicalObjectList', {
     alias: 'widget.magicalobjectlist',
     config: {
         title: "Objets magiques",
-        id: "magicalObjectList",
+        // id: "magicalObjectList",
         // styleHtmlContent: true,
-        itemTpl: '{name}',
+        itemTpl: "{name} <i style='position: relative; float: right;'>{cost} pts</i>",
         mode: 'multi',
-
-        data: []
+        grouped: true,
+        onItemDisclosure: function(record, target){
+            console.log(record);
+            console.log(target);
+            this.parent.fireEvent("magicalObjectInfos", record);
+        }
     }
 });

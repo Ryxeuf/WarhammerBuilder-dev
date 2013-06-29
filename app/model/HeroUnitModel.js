@@ -9,7 +9,7 @@ Ext.define('WarhammerBuilder.model.HeroUnitModel', {
             { name: 'cost', type: 'float' },
             { name: 'finalcost', type: 'float' },
             { name: 'magicalobjects', type: 'boolean', defaultValue: true },
-            { name: 'maxmagicalobjectscost', type: 'int' }
+            { name: 'maxmagicalobjectscost', type: 'int', defaultValue: 0 }
         ],
 
         hasMany: [

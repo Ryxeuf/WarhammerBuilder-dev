@@ -32,7 +32,8 @@ Ext.application({
     ],
 
     stores:[
-        'ArmyStore'
+        'ArmyStore',
+        'MagicalObjectStore'
     ],
     models:[
         'ArmyModel',

@@ -1217,6 +1217,11 @@
                             "name": "Grand Rat Pesteux",
                             "cost": 30,
                             "optiongroup": "monture",
+                        },
+                        {
+                            "name": "Objets magiques",
+                            "cost": 100,
+                            "optiontype": "magicalobject",
                         }
                     ]
                 },
