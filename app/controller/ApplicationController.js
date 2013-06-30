@@ -49,6 +49,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     /*********************************************************************************************************************/
     /*********************************************************************************************************************/
     army: null,
+    playerarmy: null,
     magicalObjectList: null,
     displayArmyList: function(view, index, target, record){
         console.log("displayArmyList");
@@ -72,6 +73,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     onCompositionInit: function(){
         console.log("onCompositionInit");
         console.log(this.army);
+
+        this.playerarmy = Ext.getStore("PlayerArmyStore");
+        console.log(this.playerarmy);
+
+        Ext.getCmp("lordsChosen").setStore(this.playerarmy.lordsStore);
+
         Ext.getCmp("lordSelection").setStore(this.army.lordsStore);
         Ext.getCmp("heroSelection").setStore(this.army.heroesStore);
         Ext.getCmp("coreSelection").setStore(this.army.coresStore);
@@ -434,7 +441,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     engageUnit: function(view){
         console.log("engageUnit");
         console.log(view);
-        console.log(view.up());
+        var unit = view.up().getItems().getAt(0).getRecord().getData();
+        var store = view.up().getItems().getAt(2).getStore();
+        this.playerarmy.lordsStore.add(unit);
+        // view.up().getItems().getAt(2).setData(datas);
+        // view.up().getItems().getAt(2).refresh();
+        console.log(view.up().getItems().getAt(2));
     },
 
 

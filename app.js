@@ -33,6 +33,7 @@ Ext.application({
 
     stores:[
         'ArmyStore',
+        'PlayerArmyStore',
         'MagicalObjectStore'
     ],
     models:[
