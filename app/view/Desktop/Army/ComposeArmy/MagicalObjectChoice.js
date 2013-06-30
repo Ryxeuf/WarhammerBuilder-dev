@@ -19,7 +19,7 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.MagicalObjectChoice',
                 listeners:[
                     {
                         event: 'tap',
-                        fn: function() { this.parent.parentView.parent.parent.fireEvent("validateMagicalObject", this.parent.getAt(0)); }
+                        fn: function() { this.parent.parentView.parent.parent.fireEvent("validateMagicalObject", this.parent, this.parent.getAt(0)); }
 
                     }
                 ]
@@ -27,6 +27,7 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.MagicalObjectChoice',
         ]
     },
     parentView: null,
+    parentItem: null,
     initList: function(store, cost){
         console.log("initList");
         console.log(this.getAt(0));

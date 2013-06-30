@@ -274,14 +274,16 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             case "magicalobject":
                 options.push(
                 {
-                    xtype: "container",
+                    xtype: "magicoption",
                     hidden: disabled,
                     data: option,
+                    selectedObjects: [],
+                    cost: 0,
                     items: [
                         {
                             xtype: "checkboxfield",
                             name : option.name,
-                            label: "Objet(s) magique(s)",//+" <i style='position: relative; float: right;'>"+option.cost+" pts"+((option.costbyfig)?" / fig":"")+"</i>",
+                            label: "Objet(s) magique(s) <i style='position: relative; float: right;'>0 pts</i>",
                             labelWidth: "90%",
                             data: option,
                             listeners:[
@@ -329,6 +331,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             Ext.Viewport.add(listmodal);
             listmodal.initList(this.magicalObjectList, item.getData().cost);
             listmodal.parentView = view;
+            listmodal.parentItem = item;
             listmodal.show();
         }else{
             // On désactive les autres options appartenant au même groupe pour éviter des choix impossibles
@@ -350,8 +353,11 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         var me = this;
         var option = item.getData();
 
-        if(item.getData().parentoption != null){
+        if(item.getData().optiontype == "magicalobject"){
             // On se trouve sur une option de type "objet magique"
+            item.parent.cost=0;
+            item.parent.selectedObjects=[];
+            this.updateCost(view);
         }else{        
             // Comme l'option esrt annulée, on réactive les autres options du même groupe
             item.up().getItems().each(function(element){
@@ -367,10 +373,19 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             });
         }
     },
-    validateMagicalObject: function(optionList){
+    validateMagicalObject: function(modal, optionList){
         console.log("optionList");
         console.log(optionList);
-
+        console.log(modal.parentItem);
+        var checkbox = modal.parentItem;
+        checkbox.parent.selectedObjects = optionList.getSelection();
+        checkbox.parent.cost = 0;
+        checkbox.parent.selectedObjects.forEach(function(object){
+            checkbox.parent.cost += object.getData().cost;
+        });
+        checkbox.setLabel("Objet(s) magique(s) <i style='position: relative; float: right;'>"+checkbox.parent.cost+" pts</i>");
+        modal.hide();
+        this.updateCost(modal.parentView);
     },
     updateCost: function(view){
         console.log("updateCost");
@@ -392,6 +407,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 break;
                 case "spinnerfield":
                     optionsCost += option.getData().cost*option.getValue();
+                break;
+                case "magicoption":
+                    console.log("magicoption");
+                    console.log(option);
+                    option.getItems().getAt(0).setLabel("Objet(s) magique(s) <i style='position: relative; float: right;'>"+option.cost+" pts</i>");
+                    optionsCost += option.cost;
                 break;
             }
 
