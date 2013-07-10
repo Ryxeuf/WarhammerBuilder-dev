@@ -1,0 +1,15 @@
+{
+    "armies": [
+        {
+            "name": "Nouvelle armée",
+            "image": null,
+            "description": "",
+            "lords":[],
+            "heroes":[],
+            "cores":[],
+            "specials":[],
+            "rares":[],
+            "magicobjects":[]
+        }
+    ]
+}

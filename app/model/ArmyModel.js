@@ -3,7 +3,7 @@ Ext.define('WarhammerBuilder.model.ArmyModel', {
 
     config: {
         fields: [
-            { name: 'id', type: 'int' },
+            // { name: 'id', type: 'int' },
             { name: 'name', type: 'string' },
             { name: 'image', type: 'string' },
             { name: 'description', type: 'string' }

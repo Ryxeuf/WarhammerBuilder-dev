@@ -30,7 +30,11 @@ Ext.define('WarhammerBuilder.view.desktop.Army.ComposeArmy.LordsComposition', {
                     "{name} :: "
                 ),
                 data: [],
-                height: "25%"
+                height: "25%",
+                onItemDisclosure: function(record, target){
+                    console.log(record);
+                    this.parent.fireEvent("removeSelectedUnit", record);
+                }
             }
         ]
     }

@@ -3,15 +3,15 @@ Ext.define('WarhammerBuilder.store.PlayerArmyStore', {
 
     config: {
         model: 'WarhammerBuilder.model.ArmyModel',
-        autoLoad: true
+        autoLoad: true,
 
-        // proxy: {
-        //     type: "ajax",
-        //     url: "resources/data/armies.json",
-        //     reader: {
-        //         type: 'json',
-        //         rootProperty: 'armies'
-        //     }
-        // }
+        proxy: {
+            type: "ajax",
+            url: "resources/data/playerarmy.json",
+            reader: {
+                type: 'json',
+                rootProperty: 'armies'
+            }
+        }
     }
 });

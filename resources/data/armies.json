@@ -1,7 +1,7 @@
 {
     "armies": [
         {
-            "id": 1,
+            // "id": 1,
             "name": "Hommes Lézards",
             "image": null,
             "description": "",
@@ -99,7 +99,7 @@
             ]
         },
         {
-            "id": 2,
+            // "id": 2,
             "name": "Elfes Sylvains",
             "image": null,
             "description": "",
@@ -1693,7 +1693,7 @@
             ]
         },
         {
-            "id": 4,
+            // "id": 4,
             "name": "Hauts elfes",
             "image": null,
             "description": "",

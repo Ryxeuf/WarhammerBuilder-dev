@@ -74,10 +74,17 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         console.log("onCompositionInit");
         console.log(this.army);
 
-        this.playerarmy = Ext.getStore("PlayerArmyStore");
+        // this.playerarmy = Ext.getStore("PlayerArmyStore");
+        var armyStore = Ext.getStore("PlayerArmyStore");
+        this.playerarmy = armyStore.getAt(0);
+        console.log("this.playerarmy");
         console.log(this.playerarmy);
 
         Ext.getCmp("lordsChosen").setStore(this.playerarmy.lordsStore);
+        Ext.getCmp("heroesChosen").setStore(this.playerarmy.heroesStore);
+        Ext.getCmp("coresChosen").setStore(this.playerarmy.coresStore);
+        Ext.getCmp("specialsChosen").setStore(this.playerarmy.specialsStore);
+        Ext.getCmp("raresChosen").setStore(this.playerarmy.raresStore);
 
         Ext.getCmp("lordSelection").setStore(this.army.lordsStore);
         Ext.getCmp("heroSelection").setStore(this.army.heroesStore);
@@ -441,12 +448,57 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     engageUnit: function(view){
         console.log("engageUnit");
         console.log(view);
-        var unit = view.up().getItems().getAt(0).getRecord().getData();
-        var store = view.up().getItems().getAt(2).getStore();
-        this.playerarmy.lordsStore.add(unit);
-        // view.up().getItems().getAt(2).setData(datas);
-        // view.up().getItems().getAt(2).refresh();
-        console.log(view.up().getItems().getAt(2));
+        var unit = view.up().getItems().getAt(0).getRecord().copy();
+
+        var nbFig = parseInt(Ext.getCmp(view.id+"-unitQte").getValue());
+        var figCost = view.getData().cost;
+        var optionsCost = 0;
+        Ext.getCmp(view.id+"-options").getItems().each(function(option, index){
+            switch(option.xtype){
+                case "checkboxfield":
+                    if(option.isChecked()){
+                        var costbyfigFactor = 1;
+                        if(option.getData().costbyfig){
+                            costbyfigFactor = nbFig;
+                        }
+                        optionsCost += option.getData().cost*costbyfigFactor;
+                    }
+                break;
+                case "spinnerfield":
+                    optionsCost += option.getData().cost*option.getValue();
+                break;
+                case "magicoption":
+                    console.log("magicoption");
+                    console.log(option);
+                    option.getItems().getAt(0).setLabel("Objet(s) magique(s) <i style='position: relative; float: right;'>"+option.cost+" pts</i>");
+                    optionsCost += option.cost;
+                break;
+            }
+
+        });
+        unit.getData().finalcost = nbFig*figCost + optionsCost;
+        // Ext.getCmp(view.id+"-unitCostField").setHtml("<span style='font-size: 15px; font-weight: bold;'>Coût total</span>: "+view.unitCost+"pts");
+
+
+        // Ajout de l'unité à la liste
+        switch(view.id){
+            case 'lordUnitComposition':
+                this.playerarmy.lordsStore.add(unit);
+            break;
+            case 'heroUnitComposition':
+                this.playerarmy.heroesStore.add(unit);
+            break;
+            case 'coreUnitComposition':
+                this.playerarmy.coresStore.add(unit);
+            break;
+            case 'specialUnitComposition':
+                this.playerarmy.specialsStore.add(unit);
+            break;
+            case 'rareUnitComposition':
+                this.playerarmy.raresStore.add(unit);
+            break;
+        }
+        console.log(unit);
     },
 
 
