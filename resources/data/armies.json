@@ -69,6 +69,15 @@
                             "optiontype": "magicalobject"
                         }
                     ] 
+                },
+                {
+                    "name": "Prêtre-mage Slann",
+                    "cost": 300,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 100,
+                    "options":[
+                    ] 
                 }
             ],
             "heroes":[
@@ -133,6 +142,15 @@
                             "optiontype": "magicalobject"
                         }
                     ] 
+                },
+                {
+                    "name": "Gor-Rok",
+                    "cost": 185,
+                    "finalcost" : 0,
+                    "magicalobjects" : false,
+                    "maxmagicalobjectscost" : 0,
+                    "options":[    
+                    ]
                 }
             ],
             "cores":[

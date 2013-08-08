@@ -366,6 +366,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 }
             });
         }
+        item.getData().selected = true;
     },
     uncheckOption: function(item, view){
         console.log("uncheckOption");
@@ -392,6 +393,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                 }
             });
         }
+        item.getData().selected = false;
     },
     validateMagicalObject: function(modal, optionList){
         console.log("optionList");
@@ -457,6 +459,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     engageUnit: function(view){
         console.log("engageUnit");
         console.log(view);
+        // console.log(view.up().getItems().getAt(0).getRecord().optionsStore.getData().items);
         var unit = view.up().getItems().getAt(0).getRecord().copy();
 
         var nbFig = parseInt(Ext.getCmp(view.id+"-unitQte").getValue());
@@ -471,6 +474,12 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                             costbyfigFactor = nbFig;
                         }
                         optionsCost += option.getData().cost*costbyfigFactor;
+                        unit.optionsStore.getData().items.forEach(function(unitOption){
+                            // console.log(unitOption);
+                            if(unitOption.getData().name == option.getData().name){
+                                unitOption.getData().selected=true;
+                            }
+                        });
                     }
                 break;
                 case "spinnerfield":
@@ -506,6 +515,8 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             break;
         }
         console.log(unit);
+        console.log("Armée");
+        console.log(this.playerarmy);
     },
 
 
