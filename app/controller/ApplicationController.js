@@ -235,6 +235,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
         var me = this;
         var options = [];
         var disabled = (option.parentoption == null)?false:true;
+        var hidden = (option.parentoption == null)?false:true;
         switch(option.optiontype){
             case "choice":
                 options.push({
@@ -244,6 +245,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                     labelWidth: "90%",
                     data: option,
                     disabled: disabled,
+                    hidden: hidden,
                     listeners:[
                         {
                             event: 'check',
@@ -351,13 +353,16 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             // On désactive les autres options appartenant au même groupe pour éviter des choix impossibles
             item.up().getItems().each(function(element){
                 if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup && element.getData().name != item.getData().name){
+                    console.log(element.getData().name);
                     element.disable();
+                    // element.hide();
                 }
             });
             // On active (show) mes options débloquées par le cochage
             item.up().getItems().each(function(element){
                 if(element.getData().parentoption != null && item.getData().name == element.getData().parentoption){
                     element.show();
+                    element.enable();
                 }
             });
         }
@@ -377,6 +382,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
             item.up().getItems().each(function(element){
                 if(element.getData().optiongroup != null && item.getData().optiongroup == element.getData().optiongroup){
                     element.enable();
+                    element.show();
                 }
             });
             // On désactive (hide) mes options débloquées par le cochage
@@ -404,6 +410,7 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
     updateCost: function(view){
         console.log("updateCost");
         console.log(view);
+        var me = this;
 
         var nbFig = parseInt(Ext.getCmp(view.id+"-unitQte").getValue());
         var figCost = view.getData().cost;
@@ -417,7 +424,9 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                             costbyfigFactor = nbFig;
                         }
                         optionsCost += option.getData().cost*costbyfigFactor;
-                    }
+                    }/*else{
+                        me.uncheckOption(option, view);
+                    }*/
                 break;
                 case "spinnerfield":
                     optionsCost += option.getData().cost*option.getValue();

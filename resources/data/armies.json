@@ -44,12 +44,12 @@
                         {
                             "name": "Sang Froid",
                             "cost": 30,
-                            "optiongroup": "monture"
+                            "optiongroup": "monturesaurus"
                         },
                         {
                             "name": "Carnosaure",
                             "cost": 220,
-                            "optiongroup": "monture",
+                            "optiongroup": "monturesaurus",
                             "options":[
                                 {
                                     "name": "Grandes enjambées",
@@ -62,6 +62,11 @@
                                     "parentoption": "Carnosaure"
                                 }
                             ]
+                        },
+                        {
+                            "name": "Objets magiques",
+                            "cost": 100,
+                            "optiontype": "magicalobject"
                         }
                     ] 
                 }
@@ -121,6 +126,11 @@
                                     "cost": 25
                                 }
                             ]
+                        },
+                        {
+                            "name": "Objets magiques",
+                            "cost": 50,
+                            "optiontype": "magicalobject"
                         }
                     ] 
                 }
