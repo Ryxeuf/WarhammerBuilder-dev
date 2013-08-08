@@ -468,8 +468,6 @@ Ext.define('WarhammerBuilder.controller.ApplicationController', {
                     optionsCost += option.getData().cost*option.getValue();
                 break;
                 case "magicoption":
-                    console.log("magicoption");
-                    console.log(option);
                     option.getItems().getAt(0).setLabel("Objet(s) magique(s) <i style='position: relative; float: right;'>"+option.cost+" pts</i>");
                     optionsCost += option.cost;
                 break;

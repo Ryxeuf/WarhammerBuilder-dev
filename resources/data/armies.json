@@ -6,21 +6,128 @@
             "image": null,
             "description": "",
             "lords":[
+                {
+                    "name": "Sang Ancien Saurus",
+                    "cost": 140,
+                    "finalcost" : 0,
+                    "magicalobjects" : true,
+                    "maxmagicalobjectscost" : 100,
+                    "options":[
+                        {
+                            "name": "Arme de base additionnel (sauf monture)",
+                            "cost": 3,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Hallebarde",
+                            "cost": 3,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Lance",
+                            "cost": 3,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Arme lourde",
+                            "cost": 6,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Armure légère",
+                            "cost": 9
+                        },
+                        {
+                            "name": "Bouclier",
+                            "cost": 6
+                        },
+                        {
+                            "name": "Sang Froid",
+                            "cost": 30,
+                            "optiongroup": "monture"
+                        },
+                        {
+                            "name": "Carnosaure",
+                            "cost": 220,
+                            "optiongroup": "monture",
+                            "options":[
+                                {
+                                    "name": "Grandes enjambées",
+                                    "cost": 15,
+                                    "parentoption": "Carnosaure"
+                                },
+                                {
+                                    "name": "Rugissement sanguinaire",
+                                    "cost": 25,
+                                    "parentoption": "Carnosaure"
+                                }
+                            ]
+                        }
+                    ] 
+                }
             ],
             "heroes":[
                 {
-                    "name": "Kuraq Saurus",
-                    "cost": 85,
+                    "name": "Vétéran Scarifié Saurus",
+                    "cost": 80,
                     "finalcost" : 0,
                     "magicalobjects" : true,
                     "maxmagicalobjectscost" : 50,
                     "options":[
+                        {
+                            "name": "Arme de base additionnel (sauf monture)",
+                            "cost": 2,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Hallebarde",
+                            "cost": 2,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Lance",
+                            "cost": 2,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Arme lourde",
+                            "cost": 4,
+                            "optiongroup": "arme"
+                        },
+                        {
+                            "name": "Armure légère",
+                            "cost": 6
+                        },
+                        {
+                            "name": "Bouclier",
+                            "cost": 4
+                        },
+                        {
+                            "name": "Sang Froid",
+                            "cost": 20,
+                            "optiongroup": "monture"
+                        },
+                        {
+                            "name": "Carnosaure",
+                            "cost": 220,
+                            "optiongroup": "monture",
+                            "options":[
+                                {
+                                    "name": "Grandes enjambées",
+                                    "cost": 15
+                                },
+                                {
+                                    "name": "Rugissement sanguinaire",
+                                    "cost": 25
+                                }
+                            ]
+                        }
                     ] 
                 }
             ],
             "cores":[
                 {
-                    "name": "Saurus",
+                    "name": "Guerrier Saurus",
                     "cost": 11,
                     "min": 10,
                     "max": 0,
@@ -31,26 +138,26 @@
                     "options":[
                         {
                             "name": "Lances",
-                            "cost": 1,
+                            "cost": 0,
                             "costbyfig": true
                         },
                         {
                             "name": "Etendard",
-                            "cost": 12,
+                            "cost": 10
                         },
                         {
                             "name": "Musicien",
-                            "cost": 6,
+                            "cost": 10
                         },
                         {
-                            "name": "Champion",
-                            "cost": 12,
+                            "name": "Premier de couvée",
+                            "cost": 10
                         }
                     ]
                 },
                 {
                     "name": "Tirailleurs Skinks",
-                    "cost": 6,
+                    "cost": 7,
                     "min": 10,
                     "max": 0,
                     "corepoints": true,
@@ -59,24 +166,26 @@
                     "maxmagicalobjectscost" : 0,
                     "options":[
                         {
-                            "name": "Tupak",
-                            "cost": 6,
+                            "name": "Chef de patrouille",
+                            "cost": 10
+                        },
+                        {
+                            "name": "Javelines de Lustrie et Boucliers",
+                            "cost": 0
                         }
                     ]
-                },
+                }
+            ],
+            "specials":[
                 {
                     "name": "Nuées",
-                    "cost": 45,
-                    "min": 1,
-                    "max": 3,
-                    "corepoints": false,
+                    "cost": 35,
+                    "min": 2,
                     "finalcost" : 0,
                     "magicalobjects" : false,
                     "maxmagicalobjectscost" : 0,
                     "options":[]
                 }
-            ],
-            "specials":[
             ],
             "rares":[
             ],
@@ -1206,22 +1315,22 @@
                         {
                             "name": "Rat-ogre Broyeur",
                             "cost": 65,
-                            "optiongroup": "monture",
+                            "optiongroup": "monture"
                         },
                         {
                             "name": "Litière de guerre",
                             "cost": 35,
-                            "optiongroup": "monture",
+                            "optiongroup": "monture"
                         },
                         {
                             "name": "Grand Rat Pesteux",
                             "cost": 30,
-                            "optiongroup": "monture",
+                            "optiongroup": "monture"
                         },
                         {
                             "name": "Objets magiques",
                             "cost": 100,
-                            "optiontype": "magicalobject",
+                            "optiontype": "magicalobject"
                         }
                     ]
                 },
